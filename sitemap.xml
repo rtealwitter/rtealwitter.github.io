@@ -3,7 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/publication-type/1/</loc>
+    <lastmod>2019-06-24T02:06:51-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/stconn/</loc>
+    <lastmod>2019-06-24T02:06:51-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/authors/</loc>
+    <lastmod>2019-06-24T02:06:51-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/kai-delorenzo/</loc>
+    <lastmod>2019-06-24T02:06:51-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2019-06-24T02:06:51-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2019-06-24T02:06:51-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/r.-teal-witter/</loc>
+    <lastmod>2019-06-24T02:06:51-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-06-24T02:06:51-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/shelby-kimmel/</loc>
+    <lastmod>2019-06-24T02:06:51-06:00</lastmod>
   </url>
   
   <url>
@@ -12,18 +53,6 @@
   
   <url>
     <loc>/post/</loc>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
   </url>
   
   <url>
