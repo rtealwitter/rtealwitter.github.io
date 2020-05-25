@@ -33,7 +33,10 @@
       <link>/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/cv/</guid>
-      <description>&lt;h1 id=&#34;r-teal-witter&#34;&gt;R. Teal Witter&lt;/h1&gt;
+      <description>&lt;p&gt;[[main]]
+name = &amp;ldquo;CV&amp;rdquo;
+url = &amp;ldquo;cv/index.md&amp;rdquo;&lt;/p&gt;
+&lt;h1 id=&#34;r-teal-witter&#34;&gt;R. Teal Witter&lt;/h1&gt;
 &lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
 &lt;p&gt;NYU Tandon&lt;/p&gt;
 &lt;p&gt;Middlebury College&lt;/p&gt;
