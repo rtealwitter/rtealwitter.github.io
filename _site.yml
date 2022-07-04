@@ -2,6 +2,7 @@ name: "R. Teal Witter"
 output_dir: 'docs'
 output:
   html_document:
+    includes:
+      in_header: header.html
     theme: cerulean 
     highlight: textmate
-favicon: "files/favicon.ico"
