@@ -2,6 +2,5 @@ name: "R. Teal Witter"
 output_dir: 'docs'
 output:
   html_document:
-    theme: simplex
+    theme: readable
     highlight: textmate
-    favicon: files/duck.ico
