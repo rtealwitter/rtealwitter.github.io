@@ -1,0 +1,105 @@
+---
+title: "R. Teal Witter"
+output: 
+  html_document:
+    toc: FALSE
+---
+
+370 Jay St. Brooklyn NY 11201 • rtealwitter [at] nyu.edu • [CV](files/cv.pdf) • [Github](https://github.com/rtealwitter) • [Google Scholar](https://scholar.google.com/citations?user=B2hIq-cAAAAJ&hl=en)
+
+___ 
+
+<img src="files/headshot.jpeg" style="float: right" width="200" />
+I am a PhD candidate at NYU Tandon where I am fortunate to be advised 
+by [Lisa Hellerstein](https://cse.engineering.nyu.edu/~hstein/) and [Chris Musco](https://www.chrismusco.com/). 
+My research is generously supported by an NSF Graduate Research Fellowship. 
+I am broadly interested in algorithms, complexity theory, and discrete math.
+
+I received my undergraduate degrees in Mathematics and Computer Science from Middlebury College.
+At Middlebury, I designed quantum algorithms for graph theory problems with [Shelby Kimmel](http://shelbykimmel.com/)
+and worked on applications of math in recreational board games with [Alex Lyford](https://www.middlebury.edu/academics/math/faculty/node/550503).
+
+<br/>
+
+### Education
+
+--- 
+
+**NYU Tandon**
+
+*PhD in Computer Science • September 2020 - Present*
+
+**Middlebury College**
+
+*BA in Mathematics, BA in Computer Science • Summa Cum Laude • February 2017 - May 2020*
+
+<br/>
+
+### Publications
+
+---
+
+*Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
+
+#### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
+
+**Christopher Musco, Indu Ramesh, Johan Ugander, and R. Teal Witter**
+
+17th International Workshop on Mining and Learning with Graphs (MLG 2022)
+
+#### [Backgammon is Hard](https://arxiv.org/abs/2106.16172)
+
+**R. Teal Witter**
+
+15th International Conference on Combinatorial Optimization and Applications (COCOA 2021)
+
+#### [A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)
+
+**Shelby Kimmel and R. Teal Witter**
+
+17th Algorithms and Data Structures Symposium (WADS 2021)
+
+#### [Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)
+
+**R. Teal Witter and Alex Lyford\* **
+
+15th International Conference on the Foundations of Digital Games (FDG 2020)
+
+
+#### [Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)
+
+**Kai DeLorenzo, Shelby Kimmel, and R. Teal Witter**
+
+14th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2019)
+
+<br/>
+
+### Teaching
+
+---
+
+#### Course Assistant at NYU Tandon
+
+CS-GY 6763: Algorithmic Machine Learning and Data Science *(Fall 2021, Spring 2022)*
+
+CS-GY 6923: Machine Learning *(Spring 2021)*
+
+<br/>
+
+#### Course Assistant at Middlebury College
+
+MATH 345: Combinatorics *(Spring 2020)*
+
+MATH 310: Probability *(Fall 2019)*
+
+MATH 223: Multivariable Calculus *(Spring 2019)*
+
+MATH 200: Linear Algebra *(Fall 2018)*
+
+CSCI 302: Algorithms and Complexity *(Spring 2020)*
+
+CSCI 333: Quantum Computing *(Fall 2019)*
+
+CSCI 201: Data Structures *(Spring 2019)*
+
+CSCI 200: Math Foundations of Computing *(Spring, Fall 2018)*

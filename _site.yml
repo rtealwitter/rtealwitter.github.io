@@ -1,0 +1,7 @@
+name: "R. Teal Witter"
+output_dir: 'docs'
+output:
+  html_document:
+    theme: simplex
+    highlight: textmate
+    favicon: files/duck.png
