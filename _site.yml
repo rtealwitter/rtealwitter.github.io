@@ -4,3 +4,4 @@ output:
   html_document:
     theme: readable
     highlight: textmate
+favicon: files/duck.ico
