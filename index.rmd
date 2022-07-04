@@ -5,7 +5,7 @@ output:
     toc: FALSE
 ---
 
-370 Jay St. Brooklyn, NY 11201 • rtealwitter [at] nyu.edu • [CV](files/cv.pdf) • [Github](https://github.com/rtealwitter) • [Google Scholar](https://scholar.google.com/citations?user=B2hIq-cAAAAJ&hl=en)
+370 Jay St. Brooklyn NY 11201 • rtealwitter [at] nyu.edu • [CV](files/cv.pdf) • [Github](https://github.com/rtealwitter) • [Google Scholar](https://scholar.google.com/citations?user=B2hIq-cAAAAJ&hl=en)
 
 ___ 
 
