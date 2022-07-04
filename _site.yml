@@ -4,4 +4,4 @@ output:
   html_document:
     theme: cerulean 
     highlight: textmate
-favicon: files/favicon.ico
+favicon: "files/favicon.ico"
