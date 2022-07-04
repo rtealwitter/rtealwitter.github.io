@@ -41,6 +41,8 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
+<br/>
+
 #### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
 
 **Christopher Musco, Indu Ramesh, Johan Ugander, and R. Teal Witter**
