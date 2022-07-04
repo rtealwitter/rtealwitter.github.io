@@ -4,4 +4,4 @@ output:
   html_document:
     theme: simplex
     highlight: textmate
-    favicon: files/duck.png
+    favicon: files/duck.ico
