@@ -19,8 +19,6 @@ I received my undergraduate degrees in Mathematics and Computer Science from Mid
 At Middlebury, I designed quantum algorithms for graph theory problems with [Shelby Kimmel](http://shelbykimmel.com/)
 and worked on applications of math in recreational board games with [Alex Lyford](https://www.middlebury.edu/academics/math/faculty/node/550503).
 
-<br/>
-
 ### Education
 
 --- 
@@ -33,15 +31,24 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 *BA in Mathematics, BA in Computer Science • Summa Cum Laude • February 2017 - May 2020*
 
-<br/>
+
+### Teaching
+
+---
+
+**NYU CS-GY 6763: Algorithmic Machine Learning and Data Science**
+
+*Course Assistant (Fall 2021, Spring 2022)*
+
+**NYU CS-GY 6923: Machine Learning**
+
+*Course Assistant (Spring 2021)*
 
 ### Publications
 
 ---
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
-
-<br/>
 
 #### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
 
@@ -75,33 +82,3 @@ and worked on applications of math in recreational board games with [Alex Lyford
 14th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2019)
 
 <br/>
-
-### Teaching
-
----
-
-#### Course Assistant at NYU Tandon
-
-CS-GY 6763: Algorithmic Machine Learning and Data Science *(Fall 2021, Spring 2022)*
-
-CS-GY 6923: Machine Learning *(Spring 2021)*
-
-<br/>
-
-#### Course Assistant at Middlebury College
-
-MATH 345: Combinatorics *(Spring 2020)*
-
-MATH 310: Probability *(Fall 2019)*
-
-MATH 223: Multivariable Calculus *(Spring 2019)*
-
-MATH 200: Linear Algebra *(Fall 2018)*
-
-CSCI 302: Algorithms and Complexity *(Spring 2020)*
-
-CSCI 333: Quantum Computing *(Fall 2019)*
-
-CSCI 201: Data Structures *(Spring 2019)*
-
-CSCI 200: Math Foundations of Computing *(Spring, Fall 2018)*
