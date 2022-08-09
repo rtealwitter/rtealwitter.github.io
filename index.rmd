@@ -54,7 +54,13 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
-#### Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem
+#### [Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)
+
+**Lucas Rosenblatt and R. Teal Witter**
+
+Preprint
+
+#### [Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)
 
 **Lisa Hellerstein, Devorah Kletenik, Naifeng Liu, and R. Teal Witter **
 
