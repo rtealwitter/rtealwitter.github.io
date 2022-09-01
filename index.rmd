@@ -60,41 +60,47 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 Preprint
 
+#### A Local Search Algorithm for the Min-Sum Submodular Cover Problem
+
+**Lisa Hellerstein, Thomas Lidbetter, and R. Teal Witter **
+
+International Symposium on Algorithms and Computation (ISAAC 2022)
+
 #### [Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)
 
 **Lisa Hellerstein, Devorah Kletenik, Naifeng Liu, and R. Teal Witter **
 
-20th Workshop on Approximation and Online Algorithms (WAOA 2022)
+Workshop on Approximation and Online Algorithms (WAOA 2022)
 
 #### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
 
 **Christopher Musco, Indu Ramesh, Johan Ugander, and R. Teal Witter**
 
-17th International Workshop on Mining and Learning with Graphs (MLG 2022)
+International Workshop on Mining and Learning with Graphs (MLG 2022)
 
 #### [Backgammon is Hard](https://arxiv.org/abs/2106.16172)
 
 **R. Teal Witter**
 
-15th International Conference on Combinatorial Optimization and Applications (COCOA 2021)
+International Conference on Combinatorial Optimization and Applications (COCOA 2021)
 
 #### [A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)
 
 **Shelby Kimmel and R. Teal Witter**
 
-17th Algorithms and Data Structures Symposium (WADS 2021)
+Algorithms and Data Structures Symposium (WADS 2021)
 
 #### [Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)
 
 **R. Teal Witter and Alex Lyford\* **
 
-15th International Conference on the Foundations of Digital Games (FDG 2020)
+International Conference on the Foundations of Digital Games (FDG 2020)
 
 
 #### [Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)
 
 **Kai DeLorenzo, Shelby Kimmel, and R. Teal Witter**
 
-14th Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2019)
+Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2019)
 
 <br/>
