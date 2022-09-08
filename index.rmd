@@ -60,7 +60,7 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 Preprint
 
-#### A Local Search Algorithm for the Min-Sum Submodular Cover Problem
+#### [A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)
 
 **Lisa Hellerstein, Thomas Lidbetter, and R. Teal Witter **
 
