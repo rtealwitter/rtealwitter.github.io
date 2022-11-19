@@ -54,50 +54,64 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
-#### [Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)
+##### [Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)
 
 **Lucas Rosenblatt and R. Teal Witter**
 
-Preprint
+AAAI Conference on Artificial Intelligence (AAAI 2023)
 
-#### [A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)
+<br/>
+
+##### [A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)
 
 **Lisa Hellerstein, Thomas Lidbetter, and R. Teal Witter **
 
 International Symposium on Algorithms and Computation (ISAAC 2022)
 
-#### [Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)
+<br/>
+
+##### [Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)
 
 **Lisa Hellerstein, Devorah Kletenik, Naifeng Liu, and R. Teal Witter **
 
 Workshop on Approximation and Online Algorithms (WAOA 2022)
 
-#### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
+<br/>
+
+##### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
 
 **Christopher Musco, Indu Ramesh, Johan Ugander, and R. Teal Witter**
 
 International Workshop on Mining and Learning with Graphs (MLG 2022)
 
-#### [Backgammon is Hard](https://arxiv.org/abs/2106.16172)
+<br/>
+
+
+##### [Backgammon is Hard](https://arxiv.org/abs/2106.16172)
 
 **R. Teal Witter**
 
 International Conference on Combinatorial Optimization and Applications (COCOA 2021)
 
-#### [A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)
+<br/>
+
+##### [A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)
 
 **Shelby Kimmel and R. Teal Witter**
 
 Algorithms and Data Structures Symposium (WADS 2021)
 
-#### [Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)
+<br/>
+
+##### [Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)
 
 **R. Teal Witter and Alex Lyford\* **
 
 International Conference on the Foundations of Digital Games (FDG 2020)
 
+<br/>
 
-#### [Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)
+##### [Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)
 
 **Kai DeLorenzo, Shelby Kimmel, and R. Teal Witter**
 
