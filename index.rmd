@@ -48,7 +48,7 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 *Course Assistant (Spring 2021)*
 
-### Research
+### Papers
 
 ---
 
@@ -60,15 +60,11 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 AAAI Conference on Artificial Intelligence (AAAI 2023)
 
-<br/>
-
 ##### [A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)
 
 **Lisa Hellerstein, Thomas Lidbetter, and R. Teal Witter **
 
 International Symposium on Algorithms and Computation (ISAAC 2022)
-
-<br/>
 
 ##### [Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)
 
@@ -76,16 +72,11 @@ International Symposium on Algorithms and Computation (ISAAC 2022)
 
 Workshop on Approximation and Online Algorithms (WAOA 2022)
 
-<br/>
-
 ##### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
 
 **Christopher Musco, Indu Ramesh, Johan Ugander, and R. Teal Witter**
 
 International Workshop on Mining and Learning with Graphs (MLG 2022)
-
-<br/>
-
 
 ##### [Backgammon is Hard](https://arxiv.org/abs/2106.16172)
 
@@ -93,23 +84,17 @@ International Workshop on Mining and Learning with Graphs (MLG 2022)
 
 International Conference on Combinatorial Optimization and Applications (COCOA 2021)
 
-<br/>
-
 ##### [A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)
 
 **Shelby Kimmel and R. Teal Witter**
 
 Algorithms and Data Structures Symposium (WADS 2021)
 
-<br/>
-
 ##### [Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)
 
 **R. Teal Witter and Alex Lyford\* **
 
 International Conference on the Foundations of Digital Games (FDG 2020)
-
-<br/>
 
 ##### [Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)
 
