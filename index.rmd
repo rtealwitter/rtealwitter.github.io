@@ -52,40 +52,40 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 ---
 
-*Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name.*
+*Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
-#### [Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)
+**[Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)**
 
 *at AAAI 2023 with Lucas Rosenblatt*
 
 
-#### [A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)
+**[A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)**
 
 *at ISAAC 2022 with Lisa Hellerstein and Thomas Lidbetter*
 
 
-#### [Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)
+**[Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)**
 
 *at WAOA 2022 with Lisa Hellerstein, Devorah Kletenik, and Naifeng Liu*
 
-#### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
+**[How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)**
 
 *at MLG 2022 with Christopher Musco, Indu Ramesh, and Johan Ugander*
 
 
-#### [Backgammon is Hard](https://arxiv.org/abs/2106.16172)
+**[Backgammon is Hard](https://arxiv.org/abs/2106.16172)**
 
 *at COCOA 2021*
 
-#### [A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)
+**[A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)**
 
 *at WADS 2021 with Shelby Kimmel*
 
-#### [Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)
+**[Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)**
 
-*at FDG 2020 with Alex Lyford*
+*at FDG 2020 with Alex Lyford\**
 
-#### [Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)
+**[Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)**
 
 *at TQC 2019 with Kai DeLorenzo and Shelby Kimmel*
 
