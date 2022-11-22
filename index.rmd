@@ -52,54 +52,41 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 ---
 
-*Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
+*Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name.*
 
-##### [Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)
+#### [Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)
 
-**Lucas Rosenblatt and R. Teal Witter**
+*at AAAI 2023 with Lucas Rosenblatt*
 
-AAAI Conference on Artificial Intelligence (AAAI 2023)
 
-##### [A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)
+#### [A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)
 
-**Lisa Hellerstein, Thomas Lidbetter, and R. Teal Witter **
+*at ISAAC 2022 with Lisa Hellerstein and Thomas Lidbetter*
 
-International Symposium on Algorithms and Computation (ISAAC 2022)
 
-##### [Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)
+#### [Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)
 
-**Lisa Hellerstein, Devorah Kletenik, Naifeng Liu, and R. Teal Witter **
+*at WAOA 2022 with Lisa Hellerstein, Devorah Kletenik, and Naifeng Liu*
 
-Workshop on Approximation and Online Algorithms (WAOA 2022)
+#### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
 
-##### [How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)
+*at MLG 2022 with Christopher Musco, Indu Ramesh, and Johan Ugander*
 
-**Christopher Musco, Indu Ramesh, Johan Ugander, and R. Teal Witter**
 
-International Workshop on Mining and Learning with Graphs (MLG 2022)
+#### [Backgammon is Hard](https://arxiv.org/abs/2106.16172)
 
-##### [Backgammon is Hard](https://arxiv.org/abs/2106.16172)
+*at COCOA 2021*
 
-**R. Teal Witter**
+#### [A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)
 
-International Conference on Combinatorial Optimization and Applications (COCOA 2021)
+*at WADS 2021 with Shelby Kimmel*
 
-##### [A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)
+#### [Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)
 
-**Shelby Kimmel and R. Teal Witter**
+*at FDG 2020 with Alex Lyford*
 
-Algorithms and Data Structures Symposium (WADS 2021)
+#### [Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)
 
-##### [Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)
-
-**R. Teal Witter and Alex Lyford\* **
-
-International Conference on the Foundations of Digital Games (FDG 2020)
-
-##### [Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)
-
-**Kai DeLorenzo, Shelby Kimmel, and R. Teal Witter**
-
-Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2019)
+*at TQC 2019 with Kai DeLorenzo and Shelby Kimmel*
 
 <br/>
