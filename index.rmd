@@ -36,7 +36,7 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 ---
 
-**[Middlebury CS 1051: Deep Learning](https://www.rtealwitter.com/deeplearning2023/)**
+**[Middlebury CSCI 1051: Deep Learning](https://www.rtealwitter.com/deeplearning2023/)**
 
 *Course Instructor (Winter 2023)*
 
