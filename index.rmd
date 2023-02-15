@@ -42,7 +42,7 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 **NYU CS-GY 6953: Deep Learning**
 
-*Head Course Assistant (Fall 2022)*
+*Course Assistant (Fall 2022, Spring 2023)*
 
 **NYU CS-GY 6763: Algorithmic Machine Learning and Data Science**
 
@@ -50,7 +50,7 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 **NYU CS-GY 6923: Machine Learning**
 
-*Course Assistant (Spring 2021)*
+*Course Assistant (Spring 2021, Spring 2023)*
 
 ### Papers
 
