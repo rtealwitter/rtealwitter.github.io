@@ -94,3 +94,12 @@ and worked on applications of math in recreational board games with [Alex Lyford
 *at TQC 2019 with Kai DeLorenzo and Shelby Kimmel*
 
 <br/>
+
+### More Writing
+
+--- 
+
+After struggling with NYU's high performance computing cluster for years, I put
+together a gentle introduction [here](hpc.html).
+
+<br/>
