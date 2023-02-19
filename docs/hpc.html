@@ -188,54 +188,51 @@ NYU</strong></h1>
 <div id="motivation" class="section level3">
 <h3><strong>Motivation</strong></h3>
 <p>Experimental research projects often require substantial computing
-resources. Fortunately, NYU provides access to high performance
-computing (HPC) for affiliated researchers. Unfortunately, HPC is
-surprisingly challenging to use. After years of struggling with it, I
-finally feel like I know what’s going on. In the hopes that I could save
-you some time, I’ve compiled the information I wish I was told years
-ago.</p>
-<p>Note: There are many other resources describing how you can access
-HPC. The official HPC docs is <a
-href="https://sites.google.com/nyu.edu/nyu-hpc/accessing-hpc?authuser=0">here</a>.
-I just found all the resources I could find difficult to follow or
-confusing.</p>
+resources. Fortunately, NYU provides access to a high performance
+computing (HPC) cluster for affiliated researchers. Unfortunately, the
+HPC cluster is surprisingly challenging to use. After years of
+struggling with it, I finally feel like I know what’s going on. In the
+hopes that I could save you some time, I’ve compiled the information I
+wish I were told years ago.</p>
+<p>Note: There are many other resources that explain how to use HPC (
+the official docs are <a
+href="https://sites.google.com/nyu.edu/nyu-hpc/accessing-hpc?authuser=0">here</a>).</p>
 </div>
 <div id="initial-set-up" class="section level3">
 <h3><strong>Initial Set Up</strong></h3>
-<p>There are several steps to getting an HPC account and authenticating
-into it.</p>
+<p>There are several steps to getting an account and accessing the
+cluster.</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Requesting access to HPC</strong>. The HPC cluster is a
-powerful resource. As a result, NYU restricts who can use it. If you’re
-not a NYU faculty, you’ll need an NYU faculty sponsor and you’ll have to
+<li><p><strong>Requesting access</strong>. The HPC cluster is a powerful
+resource. As a result, NYU restricts who can use it. If you’re not a NYU
+faculty member, you’ll need an NYU faculty sponsor and you’ll have to
 renew access every year. The steps are described <a
 href="https://www.nyu.edu/life/information-technology/research-computing-services/high-performance-computing/high-performance-computing-nyu-it/hpc-accounts-and-eligibility.html">here</a>.</p></li>
-<li><p><strong>Setting up the VPN (Optional)</strong>. Accessing HPC
-requires either working from NYU Wi-Fi or connecting via a VPN. The
-steps to set up a VPN are linked to under “Top Support Articles” <a
+<li><p><strong>Setting up the VPN (Optional)</strong>. Accessing the HPC
+cluster requires either working from NYU Wi-Fi or connecting via a VPN.
+The steps to set up a VPN are linked to under “Top Support Articles” <a
 href="https://www.nyu.edu/life/information-technology/infrastructure/network-services/vpn.html">here</a>.</p></li>
-<li><p><strong>Authenticating to HPC</strong>. There are several ways
-you can authenticate from your personal computer to HPC. I strongly
-recommend using VS Code. The steps to authenticate via VS Code are
-described <a
+<li><p><strong>Authenticating</strong>. There are several ways you can
+access the HPC cluster from your personal computer. I strongly recommend
+using VS Code. The steps to authenticate via VS Code are described <a
 href="https://sites.google.com/nyu.edu/nyu-hpc/training-support/general-hpc-topics/vs-code">here</a>.</p></li>
 </ol>
 </div>
 <div id="overview" class="section level3">
 <h3><strong>Overview</strong></h3>
 <center>
-<img src="images/hpc.png" width="600">
+<img src="images/hpc.png" width="800">
 </center>
-<p>Now that you’re able to access it, let’s understand how HPC works.
-You will access HPC from a personal computer (on NYU Wi-Fi or a VPN).
-Once you authenticate, you’ll be placed onto a login node. A login node
-has limited resources and, as I’ve found out from angry emails, should
-<strong>not</strong> be used for running jobs. In order to run a job,
-you’ll request access to a compute node. A compute node has lots of
-resources and should be used for running jobs. (In your request, you’ll
-specify how long you want the login node and how many CPUs/GPUs you’ll
-need.) Once you’re on a compute node, you will complete the following
-three steps:</p>
+<p>Now that you’re able to access it, let’s understand how the HPC
+cluster works. You will access the cluster from a personal computer (on
+NYU Wi-Fi or a VPN). Once you authenticate, you’ll be placed onto a
+login node. A login node has limited resources and, as I’ve found out
+from angry emails, should <strong>not</strong> be used for running jobs.
+In order to run a job, you’ll request access to a compute node. A
+compute node has lots of resources and should be used for running jobs.
+(In your request, you’ll specify how long you want the compute node, how
+many CPUs/GPUs you’ll need, etc.) Once you’re on a compute node, you
+will use the following three steps to run code.</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>Execute your singularity</strong>. A singularity keeps
 your packages in a nice and tidy container.</p></li>
@@ -244,24 +241,23 @@ environment manages the packages you’ll use.</p></li>
 <li><p><strong>Run your code</strong>. Yay!</p></li>
 </ol>
 <p>However, running these steps will require setting up a singularity
-and conda environment. It’s sadly a pain to do; all the instructions are
-in the last section. Before we get there, let’s understand the folder
-system.</p>
-<p>HPC allocates two folders for every user. As far as I can tell, one
-of them is basically useless (of course, this is where they initialize
-each session). If your NetID is <code>abc123</code>, then the useless
-folder is called <code>home/abc123</code>. The home folder has limited
-space and, as I’ve found out from even more angry emails, should
-<strong>not</strong> be used for storing code. The scratch folder,
-appropriately called <code>scratch/abc123</code> has lots of space and
-should be used for storing code.</p>
+and conda environment (the instructions to do so are in the last
+section).</p>
+<p>HPC allocates two folders for every user. If your NetID is
+<code>abc123</code> then your home folder is <code>home/abc123</code>
+and your scratch folder is <code>scratch/abc123</code>. As far as I can
+tell, the home folder is basically useless: it has limited space and, as
+I’ve found out from even more angry emails, should <strong>not</strong>
+be used for storing code. The scratch folder, appropriately called has
+lots of space and should be used for storing code.</p>
 </div>
 <div id="running-code" class="section level3">
 <h3><strong>Running Code</strong></h3>
-<p>There are two ways to run code on HPC: interactively or in a sbatch
-job. Both methods begin in a login node. Before you try either of the
-methods described in this section, you <strong>must</strong> have
-completed the instructions for one time set up in the last section.</p>
+<p>There are two ways to run code on the HPC cluster: interactively or
+in a slurm job. Both methods begin in a login node. But, before you try
+either of the methods described in this section, you
+<strong>must</strong> complete the instructions for one time set up in
+the last section.</p>
 <div id="interactively" class="section level4">
 <h4><strong>Interactively</strong></h4>
 <p>You can run code interactively by requesting a compute node,
@@ -270,17 +266,18 @@ You can request an interactive compute node with the following:</p>
 <p><code>srun --nodes=1 --tasks-per-node=1 --cpus-per-task=4 --gres=gpu:1 --mem=32GB --time=0:20:00 --pty /bin/bash</code></p>
 <p>Here, we requested one node with 32GB of memory, four CPUs, and one
 GPU for 20 minutes. Once you’ve been assigned a compute node (this may
-take a bit), you can execute your singularity with the following</p>
+take a little while), you can execute your singularity with the
+following</p>
 <p><code>singularity exec --nv --overlay $SCRATCH/overlay-25GB-500K.ext3:rw /scratch/work/public/singularity/cuda11.4.2-cudnn8.2.4-devel-ubuntu20.04.3.sif /bin/bash</code></p>
-<p>The <code>nv</code> flag tells the singularity to expect a GPU (this
-is fine in general since it will only throw a warning if you don’t have
-a GPU). Once you’re in the singularity, you can load your environment
-with <code>conda activate envname</code>. Now you should be all set to
-run your code!</p>
+<p>Note that the <code>nv</code> flag tells the singularity to expect a
+GPU (this is fine in general since it will only throw a warning if you
+don’t have a GPU). Once you’re in the singularity, you can load your
+environment with <code>conda activate envname</code>. Now you should be
+all set to run your code!</p>
 </div>
 <div id="sbatch-job" class="section level4">
 <h4><strong>Sbatch Job</strong></h4>
-<p>Many jobs take more time to run. We can submit them using slurm. An
+<p>For jobs that take awhile to run, we can submit them using slurm. An
 example slurm file appears below.</p>
 <pre><code>#!/bin/bash
 
@@ -301,37 +298,39 @@ source /ext3/env.sh
 conda activate envname
 python code.py
 &quot;</code></pre>
-<p>Here, we load a singularity, load the conda environment, activate the
-conda environment <code>envname</code> and then run the code in
+<p>The flags provide a convenient way of requesting special behavior in
+your job. After the flags, we execute a singularity load conda, activate
+the conda environment <code>envname</code>, and then run the code in
 <code>code.py</code>. If the sbatch file is called
 <code>run.slurm</code>, you can submit it by running
-<code>sbatch run.slurm</code>. You can check the status of the job by
-running <code>squeue --user abc123</code>. In addition, errors and
-outputs will appear in the respective files once the job has been
-assigned to a node.</p>
+<code>sbatch run.slurm</code> from the command line in a login node. You
+can check the status of the job by running
+<code>squeue --user abc123</code>.</p>
 </div>
 </div>
 <div id="one-time-set-up-for-singularity-and-conda"
 class="section level3">
 <h3><strong>One Time Set Up for Singularity and Conda</strong></h3>
-<p>I struggled to find error-free instructions for setting up the
-singularity and conda environments for a long time. Fortunately, <a
+<p>I struggled to find good instructions for setting up the singularity
+and conda environments for a long time. Fortunately, <a
 href="https://www.lucasrosenblatt.com/">Lucas Rosenblatt</a> kindly
-shared the following instructions and I found they worked!</p>
-<p>After authenticating to HPC and connecting to a login node, you
-should navigate to your scratch folder <code>scratch/abc123</code> (of
-course, replace <code>abc123</code>) with your own NetID.</p>
+shared the following instructions which have worked very well for
+me.</p>
+<p>After authenticating to the HPC cluster and connecting to a login
+node, you should navigate to your scratch folder
+<code>scratch/abc123</code> (of course, replace <code>abc123</code> with
+your own NetID).</p>
 <div id="creating-an-overlay" class="section level4">
 <h4><strong>Creating an Overlay</strong></h4>
 <p>We’ll first copy an overlay (a writable file system for your
-singularity) to your scratch folder. Run the following code on the
-command line:</p>
+singularity) to your scratch folder. You can accomplish this by running
+the following on the command line:</p>
 <p><code>cp /scratch/work/public/overlay-fs-ext3/overlay-25GB-500K.ext3.gz .</code></p>
-<p>We chose one of the configurations with a decent amount of memory.
-Now you’ll unzip your overlay:</p>
+<p>Here, we chose one of the overlays with a decent amount of memory.
+Now you’ll unzip your overlay with the following:</p>
 <p><code>gunzip -vvv ./overlay-25GB-500K.ext3.gz</code></p>
 <p>Don’t be surprised if the unzipping process takes a little while to
-run on the login node.</p>
+run (after all, we are on a login node).</p>
 </div>
 <div id="setting-up-conda" class="section level4">
 <h4><strong>Setting Up Conda</strong></h4>
@@ -357,7 +356,7 @@ be prompted to agree to something else.</p>
 <div id="creating-a-conda-environment" class="section level4">
 <h4><strong>Creating a Conda Environment</strong></h4>
 <p>For the installation to take effect, you’ll need to exit the
-singularity (type <code>exit</code>) and re-enter it (use the code
+singularity (type <code>exit</code>) and re-enter it (use the same code
 snippet from before).</p>
 <p>Now we’ll make sure conda works correctly by running
 <code>conda activate</code>. Your command line prompt should now have
@@ -366,16 +365,16 @@ environment with the following:</p>
 <p><code>conda create -n "envname" python=3.10</code></p>
 <p>Check that the environment works correctly by running
 <code>conda activate envname</code>. Finally, you can install all your
-by running <code>pip install packagename</code>.</p>
+packages by running <code>pip install packagename</code>.</p>
 </div>
 <div id="bash-script-for-activating-conda" class="section level4">
 <h4><strong>Bash Script for Activating Conda</strong></h4>
 <p>When you run code inside a slurm job, you’ll need to activate the
 conda environment <em>before</em> calling <code>conda activate</code> (I
-have no idea why). Fortunately, we can handle this with a batch script.
+have no idea why). Fortunately, we can handle this with a bash script.
 Make sure you’re in a singularity on a compute node and in the
-<code>/ext3/</code> folder. From here, run <code>bash</code> and
-then:</p>
+<code>/ext3/</code> folder. From here, run <code>bash</code> and then
+the following to download the bash script:</p>
 <p><code>wget https://gist.githubusercontent.com/uralik/2760833e55be112eda8352f831626419/raw/dd800529551cf0f698d3aca3bb6544076b5ece98/env.sh -O /ext3/env.sh</code></p>
 <p>For sanity, double check that you see a folder called
 <code>miniconda3</code> in <code>/ext3/</code> as well. If not, the
