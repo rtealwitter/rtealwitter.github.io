@@ -58,7 +58,7 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
-<div style="line-height:10px;">
+<div style="line-height:15px;">
 **[Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)**
 
 **Lucas Rosenblatt, R. Teal Witter**
