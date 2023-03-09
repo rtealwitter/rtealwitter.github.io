@@ -127,7 +127,13 @@ Conference on the Theory of Quantum Computation, Communication and Cryptography 
 
 --- 
 
-After struggling with NYU's high performance computing cluster for years, I put
-together a gentle introduction [here](hpc.html).
+I wrote notes on 
+[contrastive learning](https://www.rtealwitter.com/deeplearning2023/contrastive.html), 
+[stable diffusion](https://www.rtealwitter.com/deeplearning2023/diffusion.html), and 
+[implicit regularization](https://www.rtealwitter.com/deeplearning2023/regularization.html) 
+for my deep learning [class](https://www.rtealwitter.com/deeplearning2023/) at Middlebury in Winter 2023.
+
+I wrote a [post](hpc.html) explaining how to use NYU's HPC cluster.
+In the post, I distill the information I wish I had when I first starting using the cluster.
 
 <br/>
