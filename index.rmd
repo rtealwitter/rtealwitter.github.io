@@ -133,7 +133,6 @@ I wrote notes on
 [implicit regularization](https://www.rtealwitter.com/deeplearning2023/regularization.html) 
 for my deep learning [class](https://www.rtealwitter.com/deeplearning2023/) at Middlebury in Winter 2023.
 
-I wrote a [post](hpc.html) explaining how to use NYU's HPC cluster.
-In the post, I distill the information I wish I had when I first starting using the cluster.
+I wrote a [guide](hpc.html) explaining how to use NYU's HPC cluster.
 
 <br/>
