@@ -13,7 +13,7 @@ ___
 I am a PhD candidate at NYU Tandon where I am fortunate to be advised 
 by [Lisa Hellerstein](https://cse.engineering.nyu.edu/~hstein/) and [Chris Musco](https://www.chrismusco.com/). 
 My research is generously supported by an NSF Graduate Research Fellowship. 
-I am broadly interested in deep learning, quantum computing, randomized linear algebra, AI for social good, and discrete optimization problems.
+I am interested in artificial intelligence for social good, deep learning, and quantum computing.
 
 I received my undergraduate degrees in Mathematics and Computer Science from Middlebury College.
 At Middlebury, I designed quantum algorithms for graph theory problems with [Shelby Kimmel](http://shelbykimmel.com/)
