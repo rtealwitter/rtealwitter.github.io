@@ -136,7 +136,6 @@ Conference on the Theory of Quantum Computation, Communication and Cryptography 
 ### More Writing
 
 --- 
-
 I developed code-based tutorials on [adversarial image attacks](https://github.com/rtealwitter/dl-demos/blob/217fb01a7f2c3b15f0d7f72a00235016afbd9c4c/generative/Adversarial%20Image%20Classification.ipynb), [neural style transfer](https://github.com/rtealwitter/dl-demos/blob/217fb01a7f2c3b15f0d7f72a00235016afbd9c4c/generative/Neural%20Style%20Transfer.ipynb), [variational autoencoders](https://github.com/rtealwitter/dl-demos/blob/217fb01a7f2c3b15f0d7f72a00235016afbd9c4c/generative/Image%20Reconstruction.ipynb), and [diffusion](https://github.com/rtealwitter/dl-demos/blob/217fb01a7f2c3b15f0d7f72a00235016afbd9c4c/generative/Diffusion.ipynb) for Chris Musco's graduate machine learning [class](https://www.chrismusco.com/machinelearning2023_grad/).
 
 I wrote notes on 
@@ -146,5 +145,7 @@ I wrote notes on
 for the deep learning [class](https://www.rtealwitter.com/deeplearning2023/) I taught at Middlebury.
 
 After struggling for years, I compiled a [how-to guide](hpc.html) for NYU's high performance computing cluster.
+
+I curated code-based [demonstrations](https://github.com/rtealwitter/dl-demos) that accompany Chinmay Hegde's graduate deep learning [class](https://chinmayhegde.github.io/dl-notes/) at NYU and my own undergraduate deep learning [class](https://www.rtealwitter.com/deeplearning2023/) at Middlebury. Recordings of the demos are available [here](https://www.youtube.com/playlist?list=PL7H4NHNKlP-lPKJxbozO8vESzXr_YPVdm).
 
 <br/>
