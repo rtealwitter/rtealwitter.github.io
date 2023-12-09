@@ -37,6 +37,10 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 ---
 
+**Middlebury CSCI 1052: Randomized Algorithms for Data Science**
+
+*Course Instructor ([Winter 2024](https://www.rtealwitter.com/rads2024/))*
+
 **Middlebury CSCI 1051: Deep Learning**
 
 *Course Instructor ([Winter 2023](https://www.rtealwitter.com/deeplearning2023/))*
@@ -60,6 +64,15 @@ and worked on applications of math in recreational board games with [Alex Lyford
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
 <div style="line-height:15px;">
+
+**I Open at the Close: A Deep Reinforcement Learning Evaluation of Open Streets Initiatives\***
+
+**R. Teal Witter, Lucas Rosenblatt**
+
+AAAI Conference on Artificial Intelligence (AAAI 2024)
+
+<br/>
+
 **[Robust and Space-Efficient Dual Adversary Quantum Query Algorithms](https://arxiv.org/abs/2306.15040)**
 
 **Michael Czekanski, Shelby Kimmel, R. Teal Witter**
@@ -117,9 +130,9 @@ Algorithms and Data Structures Symposium (WADS 2021)
 
 <br/>
 
-**[Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)**
+**[Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)\***
 
-**R. Teal Witter, Alex Lyford \***
+**R. Teal Witter, Alex Lyford **
 
 International Conference on the Foundations of Digital Games (FDG 2020)
 
