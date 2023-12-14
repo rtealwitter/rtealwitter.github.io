@@ -65,7 +65,7 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 <div style="line-height:15px;">
 
-**I Open at the Close: A Deep Reinforcement Learning Evaluation of Open Streets Initiatives\***
+**[I Open at the Close: A Deep Reinforcement Learning Evaluation of Open Streets Initiatives](https://arxiv.org/abs/2312.07680)\***
 
 **R. Teal Witter, Lucas Rosenblatt**
 
