@@ -1,0 +1,10 @@
+---
+title: "**The Farmer's Wife**"
+output:
+  html_document:
+    css: styles.css
+---
+
+<center>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1r9f2boo-h5UNJvJrgBdV_pTnT4N6sBc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+</center>
