@@ -1,8 +1,0 @@
-name: "R. Teal Witter"
-output_dir: 'docs'
-output:
-  html_document:
-    includes:
-      in_header: header.html
-    theme: cosmo
-    highlight: textmate
