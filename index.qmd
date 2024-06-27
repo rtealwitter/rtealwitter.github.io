@@ -5,7 +5,9 @@ output:
     toc: FALSE
 ---
 
-370 Jay St. Brooklyn NY 11201 • rtealwitter [at] nyu.edu • [CV](files/cv.pdf) • [Github](https://github.com/rtealwitter) • [Google Scholar](https://scholar.google.com/citations?user=B2hIq-cAAAAJ&hl=en)
+<center>
+370 Jay St. Brooklyn, NY • rtealwitter [at] nyu.edu • [CV](files/cv.pdf) • [Github](https://github.com/rtealwitter) • [Google Scholar](https://scholar.google.com/citations?user=B2hIq-cAAAAJ&hl=en)
+</center>
 
 ___ 
 
@@ -63,15 +65,13 @@ and worked on applications of math in recreational board games with [Alex Lyford
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
-<div style="line-height:15px;">
-
 **[I Open at the Close: A Deep Reinforcement Learning Evaluation of Open Streets Initiatives](https://arxiv.org/abs/2312.07680)\***
 
 **R. Teal Witter, Lucas Rosenblatt**
 
 AAAI Conference on Artificial Intelligence (AAAI 2024)
 
-<br/>
+
 
 **[Robust and Space-Efficient Dual Adversary Quantum Query Algorithms](https://arxiv.org/abs/2306.15040)**
 
@@ -79,7 +79,7 @@ AAAI Conference on Artificial Intelligence (AAAI 2024)
 
 European Symposium on Algorithms (ESA 2023)
 
-<br/>
+
 
 
 **[Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)**
@@ -88,7 +88,7 @@ European Symposium on Algorithms (ESA 2023)
 
 AAAI Conference on Artificial Intelligence (AAAI 2023)
 
-<br/>
+
 
 **[A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)**
 
@@ -96,7 +96,7 @@ AAAI Conference on Artificial Intelligence (AAAI 2023)
 
 International Symposium on Algorithms and Computation (ISAAC 2022)
 
-<br/>
+
 
 **[Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)**
 
@@ -104,7 +104,7 @@ International Symposium on Algorithms and Computation (ISAAC 2022)
 
 Workshop on Approximation and Online Algorithms (WAOA 2022)
 
-<br/>
+
 
 **[How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)**
 
@@ -112,7 +112,7 @@ Workshop on Approximation and Online Algorithms (WAOA 2022)
 
 International Workshop on Mining and Learning with Graphs (MLG 2022)
 
-<br/>
+
 
 **[Backgammon is Hard](https://arxiv.org/abs/2106.16172)**
 
@@ -120,15 +120,11 @@ International Workshop on Mining and Learning with Graphs (MLG 2022)
 
 International Conference on Combinatorial Optimization and Applications (COCOA 2021)
 
-<br/>
-
 **[A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)**
 
 **Shelby Kimmel, R. Teal Witter**
 
 Algorithms and Data Structures Symposium (WADS 2021)
-
-<br/>
 
 **[Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)\***
 
@@ -136,15 +132,11 @@ Algorithms and Data Structures Symposium (WADS 2021)
 
 International Conference on the Foundations of Digital Games (FDG 2020)
 
-<br/>
-
 **[Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)**
 
 **Kai DeLorenzo, Shelby Kimmel, R. Teal Witter**
 
 Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2019)
-
-</div>
 
 ### More Writing
 
@@ -157,8 +149,6 @@ I wrote notes on
 [implicit regularization](https://www.rtealwitter.com/deeplearning2023/regularization.html)
 for the deep learning [class](https://www.rtealwitter.com/deeplearning2023/) I taught at Middlebury.
 
+I curated code-based [demos](https://github.com/rtealwitter/dl-demos) that accompany Chinmay Hegde's graduate deep learning [class](https://chinmayhegde.github.io/dl-notes/) at NYU and my own undergraduate deep learning [class](https://www.rtealwitter.com/deeplearning2023/) at Middlebury. Recordings of the demos are available [here](https://www.youtube.com/playlist?list=PL7H4NHNKlP-lPKJxbozO8vESzXr_YPVdm).
+
 After struggling for years, I compiled a [how-to guide](hpc.html) for NYU's high performance computing cluster.
-
-I curated code-based [demonstrations](https://github.com/rtealwitter/dl-demos) that accompany Chinmay Hegde's graduate deep learning [class](https://chinmayhegde.github.io/dl-notes/) at NYU and my own undergraduate deep learning [class](https://www.rtealwitter.com/deeplearning2023/) at Middlebury. Recordings of the demos are available [here](https://www.youtube.com/playlist?list=PL7H4NHNKlP-lPKJxbozO8vESzXr_YPVdm).
-
-<br/>

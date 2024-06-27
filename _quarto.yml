@@ -1,5 +1,7 @@
 project:
   type: website
+  output-dir: docs
+  resources: CNAME
 
 website:
   title: "R. Teal Witter"
@@ -10,4 +12,3 @@ format:
     css: styles.css
     toc: false
     include-in-header: header.html
-
