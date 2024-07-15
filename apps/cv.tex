@@ -1,0 +1,126 @@
+\documentclass[11pt,a4paper,sans]{moderncv} 
+
+
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{purple}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+
+% Load papers from bib file
+\usepackage[style=ieee, sorting=ydnt]{biblatex}
+\addbibresource{references.bib}
+
+% Last updated footnote
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{Last updated \today.}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{R. Teal}{Witter}
+\email{rtealwitter@nyu.edu}
+\homepage{www.rtealwitter.com}
+\social[github]{rtealwitter}
+
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{September 2020--Present}{PhD in Computer Science}{New York University}{New York, NY}{}{Advised by \href{https://cse.engineering.nyu.edu/~hstein/}{Lisa Hellerstein} and \href{https://www.chrismusco.com/}{Christopher Musco}}  % arguments 3 to 6 can be left empty
+\cventry{February 2017--May 2020}{BA in Mathematics, BA in Computer Science}{Middlebury College}{Middlebury, VT}{}{Phi Beta Kappa}
+
+\section{Research Interests}
+Algorithm design and analysis, deep learning, discrete optimization, randomized algorithms, and quantum computing
+
+\section{National Awards}
+
+\cvitemwithcomment{}{NSF Graduate Research Fellow}{2022-2025}
+\cvitemwithcomment{}{Goldwater Scholar}{2019}
+\cvitemwithcomment{}{Academic All-American}{2015}
+
+\section{Teaching}
+\cventry{Winter 2024}{Course Instructor}{Randomized Algorithms for Data Science}{Middlebury CSCI 1052}{}{}
+\cventry{Winter 2023}{Course Instructor}{Deep Learning}{Middlebury CSCI 1051}{}{}
+\cventry{Fall 2022, Spring 2023, Fall 2023}{Course Assistant}{Deep Learning}{NYU CS-GY 6953}{}{}
+\cventry{Fall 2021, Spring 2022, Fall 2023}{Course Assistant}{Algorithmic Machine Learning and Data Science}{NYU CS-GY 6763}{}{}
+\cventry{Spring 2021, Spring 2023}{Course Assistant}{Machine Learning}{NYU CS-GY 6923}{}{}
+
+% Publications from a BibTeX file using the biblatex package
+\section{Publications}
+\textit{In the tradition of mathematics and theoretical computer science, authors appear in alphabetical order unless otherwise marked with an asterisk.}
+
+\begin{refsection}
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+\section{Talks}
+\textbf{}
+
+\textbf{Estimating the Impact of Social Programs in Resource-Constrained Settings}
+
+\cvitemwithcomment{}{NYU-KAIST Inclusive AI Workshop}{November 2023}
+
+\textbf{Robust and Space-Efficient Dual Adversary Quantum Query Algorithms}
+
+\cvitemwithcomment{}{Centrum Wiskunde \& Informatica QuSoft Seminar}{September 2023}
+
+\cvitemwithcomment{}{Quantum Computing and Optimization Minisymposium at SIAM NNP}{October 2023}
+
+\textbf{Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem}
+
+\cvitemwithcomment{}{Workshop on Approximation and Online Algorithms}{September 2022}
+
+\textbf{How to Quantify Polarization in Models of Opinion Dynamics}
+
+\cvitemwithcomment{}{International Workshop on Mining and Learning with Graphs}{August 2022}
+
+\textbf{A Local Search Algorithm for the Min-Sum Submodular Cover Problem}
+
+\cvitemwithcomment{}{International Symposium on Algorithms and Computation}{December 2022}
+
+\cvitemwithcomment{}{International Workshop on Mining and Learning with Graphs}{January 2022}
+
+\textbf{Backgammon is Hard}
+
+\cvitemwithcomment{}{International Workshop on Mining and Learning with Graphs}{December 2021}
+
+\textbf{A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs}
+
+\cvitemwithcomment{}{International Workshop on Mining and Learning with Graphs}{August 2021}
+
+\textbf{Applications of Graph Theory and Probability in the Board Game \textit{Ticket to Ride}}
+
+\cvitemwithcomment{}{International Workshop on Mining and Learning with Graphs}{September 2020}
+
+\cvitemwithcomment{}{Contributed Paper Session at the Joint Mathematics Meetings}{January 2020}
+
+\textbf{Applications of the Quantum Algorithm for \textit{st}-Connectivity}
+
+\cvitemwithcomment{}{Conference on the Theory of Quantum Computation, Communication and Cryptography}{June 2019}
+
+\section{Service}
+
+\cventry{}{QIP 2022, ICALP 2022, TQC 2022, NeurIPS 2023, ICLR 2024, ICML 2024}{Conference Reviewing}{}{}{}
+
+\cventry{}{Information Processing Letters, Theoretical Computer Science}{Journal Reviewing}{}{}{}
+
+\section{Outreach}
+
+\cventry{Spring 2021-2023}{Instructor}{Extracurricular Coding Club}{Brooklyn International High School}{}{}
+
+\section{Advising}
+
+\cventry{Summer 2024}{Barnard College '26}{Syna Sachdeva}{Neural Radiance Fields and Gaussian Splatting}{}{}
+
+\cventry{Spring 2024-Present}{New York University '25}{Jack Liu}{Latent Guidance of Large Language Models}{}{}
+
+\cventry{Summer 2022}{Brooklyn International High School '22}{Xiaorui Lei}{Active Learning and Importance Sampling}{}{}
+
+\cventry{Summer 2022}{Brooklyn International High School '22}{Bryant Chen}{Active Learning and Importance Sampling}{}{}
+
+
+\end{document}

@@ -6,7 +6,7 @@ output:
 ---
 
 <center>
-370 Jay St. Brooklyn, NY • rtealwitter [at] nyu.edu • [CV](files/cv.pdf) • [Github](https://github.com/rtealwitter) • [Google Scholar](https://scholar.google.com/citations?user=B2hIq-cAAAAJ&hl=en)
+370 Jay St. Brooklyn, NY • rtealwitter [at] nyu.edu • [CV](apps/cv.pdf) • [Github](https://github.com/rtealwitter) • [Google Scholar](https://scholar.google.com/citations?user=B2hIq-cAAAAJ&hl=en)
 </center>
 
 ___ 
@@ -151,4 +151,4 @@ for the deep learning [class](https://www.rtealwitter.com/deeplearning2023/) I t
 
 I curated code-based [demos](https://github.com/rtealwitter/dl-demos) that accompany Chinmay Hegde's graduate deep learning [class](https://chinmayhegde.github.io/dl-notes/) at NYU and my own undergraduate deep learning [class](https://www.rtealwitter.com/deeplearning2023/) at Middlebury. Recordings of the demos are available [here](https://www.youtube.com/playlist?list=PL7H4NHNKlP-lPKJxbozO8vESzXr_YPVdm).
 
-After struggling for years, I compiled a [how-to guide](hpc.html) for NYU's high performance computing cluster.
+After struggling for years, I compiled a [how-to guide](hpc/how-to.html) for NYU's high performance computing cluster.

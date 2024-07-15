@@ -39,7 +39,7 @@ The steps to authenticate via VS Code are described [here](https://sites.google.
 
 ### **Overview**
 
-<center><img src="files/hpc.png" width="800"></center>
+<center><img src="hpc.png" width="800"></center>
 
 Now that you're able to access it, let's understand how the HPC cluster works.
 You will access the cluster from a personal computer (on NYU Wi-Fi or a VPN).
