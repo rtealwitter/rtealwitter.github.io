@@ -9,148 +9,125 @@
 	\large{R. {\color{teal}Teal} Witter}
 \end{center}
 
-Algorithms form the backbone of modern computing.
-They appear throughout our lives, from everyday tasks like searching the internet to medical tasks like diagnosing illnesses.
-For each application, algorithms must satisfy problem-specific criteria such as speed, efficiency, and accuracy.
-For example, when we search the internet, we evaluate an algorithm's performance primarily based on speed but, when we diagnose illnesses, we evaluate an algorithm's performance primarily based on accuracy.
-Generally, we want algorithms that both have demonstrated effective performance on reasonable inputs and have theoretical performance guarantees on the worst inputs that we may encounter.
-Designing algorithms that are both practically effective and theoretically robust requires a deep understanding of problem-specific criteria and creative applications of mathematical techniques.
+I love research: the challenge of a difficult problem, the connection between two seemingly different ideas, the surprise when my intuition fails, and the deep insight when I dig in to topics that previously confused me.
+My research spans diverse domains, reflecting the expertise of the brilliant people I get to work with and the questions that fascinate me.
+This interdisciplinary nature of my work enables the cross-pollination of ideas and fosters innovative algorithmic solutions.
 
-My research focuses on designing and analyzing algorithms that satisfy problem-specific criteria like speed, efficiency, and accuracy.
-My work has focused on applications in 1) sequential decision-making, 2) social dynamics, and 3) quantum computing.
+As an algorithmic generalist, I leverage mathematical insights to tackle computational problems, guided by the following questions:
+How can we \textit{design} better---more accurate, robust, efficient, and simple---algorithms for the problem at hand?
+How can we \textit{analyze} these algorithms to mathematically understand their properties and limitations?
+I am particularly excited about applying novel techniques to answer these questions in settings with significant social impact, where resources may be limited.
 
-Even though the areas I work in are seemingly unrelated, I apply the same algorithmic design method.
-I first identify problems that are impactful from discussions with domain experts and consider previously studied algorithms for these problems.
-Based on the problem-specific criteria, I pinpoint what properties of the existing algorithms can be improved and then develop algorithms that satisfy these properties.
-The development process consists of iteratively testing on real data, analyzing the algorithm's properties mathematically, and modifying the algorithm to improve its practical performance and mathematical properties.
+I have been privileged to collaborate with many wonderful researchers and domain experts.
+I have co-authored 10 peer-reviewed papers with researchers from across seven academic institutions.
+I have also advised three undergraduate research projects, guiding four students in their first research experiences.
+I have worked closely with one nonprofit organization, helping them to measure the impact of their work.
+Looking forward, I am eager to establish new collaborations with colleagues from diverse backgrounds, mentor student projects that drive meaningful impact, and focus my research on problems with significant social impact.
+By doing so, I aim to continue producing innovative research that benefits the academic community and society at large.
 
-I apply the algorithmic design method in collaboration with fellow researchers and domain experts.
-I am grateful for the excellent collaborators I have worked with across seven institutions and the many nonprofits I have spoken with to identify impactful problems.
-I will continue applying the algorithmic design method in the future and look forward to working with new colleagues and students.
+\noindent {\large\textbf{Machine Learning for Social Good}}
+
+My recent research focuses on applying machine learning to problems with social impact.
+A fundamental problem for nonprofit organizations is to measure the impact of their work.
+Ideally, nonprofits would use a longitudinal randomized controlled trial to measure the effect of their `treatment', but this is often infeasible due to cost and ethical concerns.
+In my work, I developed and theoretically analyzed an algorithm that estimates treatment effect from observational data even when treatment is assigned in a non-random way.
+The algorithm uses a regression adjustment with a novel loss function that is robust to non-random treatment assignments.
+I collaborated with Reach Out and Read Colorado (RORCO), a nonprofit that provides free books and a `prescription for reading' to children at pediatric check-ups, to tune the algorithm to address their setting and evaluate its performance on their data.\footnote{\url{https://github.com/rtealwitter/naturalexperiments}}
+Already, RORCO has used my results to bolster their fundraising and expand their work.
+
+Living in New York City, I have seen firsthand the negative impact of traffic congestion.
+An increasingly popular approach to improve urban environments is to close streets to cars and open them to people, a practice known as `open streets'.
+Interestingly, because of a phenomenon known as Braess's paradox, open streets can actually reduce congestion on the remaining streets by eliminating bottlenecks.
+However, choosing which streets to open is a challenging optimization problem that requires evaluating traffic patterns, weather, infrastructure, and likely accidents.
+In my work, I designed a deep reinforcement learning algorithm to select streets to open that minimize congestion and collisions \cite{witter2024i}.
+The algorithm uses graph neural networks to incorporate the complex spatial relationships of urban infrastructure and a recurrent component to capture the temporal dynamics of traffic and weather.
+The algorithm was evaluated on real data from the New York City Department of Transportation and showed a reduction in congestion and collisions compared to the current method of opening streets.
+In contrast to the current application-based approach that biases the benefit towards well-resourced neighborhoods, the model offers an objective and data-based approach for selecting open streets.\footnote{\url{https://github.com/rtealwitter/OpenStreets}}
+
+I have also worked on several projects to improve the fairness of machine learning algorithms.
+When making predictions in real life, algorithms necessarily struggle to capture the underlying randomness of the world.
+Understanding this uncertainty and accounting for it in algorithms is important for making fair decisions.
+In my work, I built an extensive benchmark across ten datasets to evaluate methods for incorporating uncertainty into fairness-aware algorithms.
+Leveraging the benchmark, I developed a novel algorithm for regression problems incorporating uncertainty that can reduce unfairness without any explicit fairness intervention and a simple algorithm for classification problems that outperforms more complex methods from prior work.\footnote{\url{https://github.com/rtealwitter/fairlyuncertain}}
+In another fairness project, I theoretically analyzed the relationship between two popular fairness definitions, counterfactual fairness and demographic parity.
+While counterfactual fairness is difficult to measure, I showed that it is equivalent to demographic parity under a common assumption in social settings \cite{rosenblatt2023counterfactual}.
+Since demographic parity is easier to measure and design algorithms to achieve, my results offer a simpler method to achieve and measure counterfactual fairness.
 
 \noindent {\large\textbf{Sequential Decision-Making}}
 
-\noindent Deciding what to do next is a fundamental algorithmic problem.
-For example, in healthcare, doctors must decide what tests to run on a patient in order to diagnose them.
-In this context, we want an algorithm that can both diagnose patients with only a few tests and identify what test to run next with only a few doctor consultations.
-Unfortunately, the two goals are in tension.
-An \textit{adaptive} algorithm that seeks doctor advice after each test will minimize the number of tests but require many consultations.
-In contrast, a \textit{non-adaptive} algorithm that decides all tests in advance will minimize the number of consultations but will require many unnecessary tests.
-Determining whether to use an adaptive or non-adaptive algorithm requires carefully analyzing the gap in performance.
-Prior work has considered this adaptivity gap for simple Boolean functions where all tests are interchangeable.
-In my work, I analyzed the adaptivity gap for more general classes of Boolean functions that are common in practice.
+Theoretical understanding is an important component of designing algorithms that are both efficient and accurate.
+Leveraging the relative simplicity of sequential decision-making problems, my research theoretically explored the properties and limitations of different algorithmic techniques.
+In particular, I explored the relationships between optimization problems, the power of adaptivity in decision-making, and the effectiveness of local search algorithms.
 
-Using the algorithmic design method,
-I showed that the gap in performance between the best adaptive and non-adaptive algorithms can be large for general Boolean functions.
-In practical terms, my findings suggest that adaptive algorithms should generally be preferred unless adaptivity is prohibitively expensive or the Boolean function is simple to evaluate.
-One of the Boolean functions I analyzed is a DNF formula (OR of ANDs).
-For this function, I used insights about the optimal adaptive algorithm to prove a matching upper and lower logarithmic bound on the adaptivity gap.
-Another one of the Boolean functions I analyzed is a read-once formula (AND-OR trees where each test appears at most once).
-For this function, I used branching processes from probability theory to construct a lower bound where the best adaptive algorithm can be almost linearly better than the best non-adaptive algorithm.
-A simple, greedy algorithm gives a basically matching upper bound.
-Along with results for several other classes of functions, my work was published in the proceedings of the Workshop on Approximation and Online Algorithms \cite{hellerstein2022adaptivity}.
+Restless multi-armed bandits are a classic problem in sequential decision-making that exemplify the trade-off between exploration and exploitation.
+Traditionally, the goal is to maximize reward obtained from activating a sequence of arms subject to a budget constraint.
+In my work, I extended the restless bandit formulation to include a minimization objective, allowing for more flexibility than the standard budget constraint.
+I found a reduction to polynomial-space Turing machines, showing the minimization problem is PSPACE-hard, just like the maximization problem.
+However, in experiments and theoretical results, I demonstrated that minimization problem is fundamentally different and requires new algorithms and insights.
+My work is a first step towards understanding the minimization problem.
 
-When adaptively making decisions is not possible, the problem becomes determining in which order to perform a set of actions.
-For example, in healthcare, an expanding hospital must decide in which order to open clinics so that the average time until each patient can access a clinic nearby them is minimized.
-For high-stakes applications, we want an algorithm that offers both theoretical guarantees and diverse solutions so that the best solution can be chosen with stakeholder input.
-For the setting where the reward of actions (e.g. number of patients nearby a clinic) satisfies a diminishing returns property, prior work showed a greedy algorithm gives a constant approximation to the problem.
-However, the greedy algorithm outputs only one solution that may not satisfy stakeholder constraints.
-I used the algorithmic design method to develop a local search algorithm that exhaustively explores the solution-space through iterative improvements.
-By testing it on real data, I showed the algorithm outputs a set of solutions that is diverse.
-In addition, I used linear programming and duality to prove the algorithm gives nearly the best constant approximation factor to the problem unless P=NP.
-My work was published in the proceedings of the International Symposium on Algorithms and Computation \cite{hellerstein2022local}.
-
-\noindent {\large\textbf{Social Modeling}}
-
-\noindent Modeling human behavior and concepts is a challenging yet important problem.
-Because behavior is complicated, research tends to focus on similarly complicated algorithms built in ad hoc ways to mimic the observed behavior.
-In my work, I used mathematical ideas to propose approaches which capture the complexity of behavior and concepts in elegant and simple ways.
-
-Studying how people form political opinions is important for building functional discourse.
-Prior work has generally focused on modeling opinion dynamics using complicated algorithms to emulate the political polarization we observe in the real world.
-In contrast, I used mathematical insights to show how a simple averaging algorithm, when viewed through the right lens, can produce realistic polarization.
-Instead of viewing opinions as absolute, my work formulated opinions as relative to the mean opinion of the social network.
-Through a connection to spectral graph theory, the averaging opinion algorithm can then be seen as converging to the second eigenvector of a matrix related to the social network.
-A corollary of the result is that relative opinions are formed solely based on the connections in the social network.
-The findings suggest that augmenting social networks to make them more connected would reduce opinion polarization.
-My work was published in the proceedings of the International Workshop on Mining and Learning with Graphs \cite{musco2022quantify}.
-
-Defining and designing algorithms to achieve fairness is important for building a more equitable world.
-A popular but complicated notion of fairness is based on counterfactuals; an algorithm is counterfactually fair if each person is treated the same as the version of themselves where only their protected attribute (e.g. race, gender, religion) is changed.
-Unfortunately, measuring counterfactual fairness is challenging and designing counterfactually fair algorithms is even more so.
-In my work, I used probability techniques to show that counterfactual fairness is basically equivalent to another fairness definition called demographic parity.
-Demographic parity is easier to measure and design algorithms to achieve.
-My work was published in the proceedings of the AAAI Conference on Artificial Intelligence \cite{rosenblatt2023counterfactual}.
+In addition to exploring the relationship between optimization problems, I have worked on testing the limits of algorithmic techniques in the context of Boolean function evaluation.
+Given a Boolean function on $n$ bits, the goal is to evaluate the function on an unknown input with as few queries as possible.
+An adaptive algorithm can query the function and use the results to decide which input to query next, while a non-adaptive algorithm must decide all queries in advance.
+In my work, I analyzed the gap between the best adaptive and non-adaptive algorithms for several classes of Boolean functions \cite{hellerstein2022adaptivity}.
+My results show that the adaptivity gap can vary from $\Theta(\log n)$ for simple functions like DNF formulas to $\tilde{\Theta}(n)$ for more expressive functions like read-once formulas.
+The results suggest that adaptivity is generally beneficial unless the function is simple or adaptivity is prohibitively expensive.
+In addition to adaptivity, I have also explored the power of local search algorithms with any-time guarantees for sequential decision-making problems.
+In my work, I proved that a local search algorithm that outputs a diverse set of solutions has a constant approximation factor that approaches that of the best known greedy algorithm \cite{hellerstein2022local}.
+The results suggest that local search algorithms can be a powerful complement to greedy algorithms especially when solutions should be diverse or robust.
 
 \noindent {\large\textbf{Quantum Computing}}
 
-\noindent Quantum computers offer a new paradigm for computing that promises algorithms which can run much faster than their classical counterparts.
-Because building quantum computers at scale is so challenging, it is important to theoretically analyze how useful quantum computers will be.
-My research has focused on designing and analyzing quantum algorithms for graph theory problems.
+Quantum computers have the potential to revolutionize computing by harnessing the quantum mechanical properties of superposition and entanglement.
+However, because building quantum computers at scale is so challenging, it is important to theoretically analyze how useful quantum computers will be.
+My research has focused on designing and analyzing quantum algorithms for graph theory problems and developing new techniques for numerically deriving quantum algorithms.
 
-Using an elegant formulation from prior work, I showed how quantum computers can be used to solve graph theory problems related to $st$-connectivity like cycle and bipartite detection.
-Using the algorithmic design method, I developed simple algorithms with provable guarantees.
-For many of the problems I considered, the guarantees generally matched known lower bounds so the algorithms were optimal.
-My work was published in the proceedings of the Conference on the Theory of Quantum Computation, Communication, and Cryptography \cite{delorenzo2019applications}.
-Another important graph theory problem is maximum matching.
-Maximum matching cannot be solved using an $st$-connectivity subroutine so I turned to a recent method for designing quantum algorithms from decision trees.
-By combining the decision tree method with an efficient classical algorithm for maximum matching, I designed a quantum algorithm with the best known query complexity for maximum matching.
-My work was published in the proceedings of the Algorithms and Data Structures Symposium \cite{kimmel2021query}.
+My research began with a focus on designing quantum algorithms for graph theory problems.
+In my work, I designed and analyzed efficient quantum algorithms for problems related to graph connectivity like cycle and bipartite detection \cite{delorenzo2019applications}.
+I applied several reductions to reduce cycle and bipartite detection to $st$-connectivity.
+Because of the fine-grained nature of the reductions, the guaranteed complexity of the quantum algorithms incorporated problem-specific parameters.
+In a follow-up work, I adapted an efficient classical algorithm for maximum matching to design a quantum algorithm with the best known quantum query complexity for maximum matching on general graphs \cite{kimmel2021query}.
 
-The two methods I previously used for designing quantum algorithms originate from a semi-definite program (SDP).
-An optimal solution to the SDP gives a query-optimal quantum algorithm.
-However, finding an optimal solution is difficult because the SDP is brittle to small errors and the number of variables grows exponentially with the size of the input.
-I showed that the SDP can still give a query-optimal quantum algorithm even when the SDP is not solved exactly but instead is solved within some tolerance.
-Further, I showed that the number of variables can be reduced by using high-dimensional compression techniques like the Johnson-Lindenstrauss projection.
-My work was published in the proceedings of the European Symposium on Algorithms \cite{czekanski2023robust}.
+I then turned to developing new techniques for numerically deriving quantum algorithms.
+The algorithms I previously designed originate from a semi-definite program (SDP) whose solutions correspond to query-optimal quantum algorithms.
+However, analytically solving the SDP is difficult because of its complexity.
+In my work, I showed that numerical solutions to the SDP can still give query-optimal quantum algorithm even when the SDP is only solved approximately \cite{czekanski2023robust}.
+The results open the door to numerically-derived quantum algorithms that are nearly query-optimal.\footnote{\url{https://github.com/rtealwitter/QuantumQueryOptimizer}}
 
-In addition to the research described above, I have also developed algorithms for the board game Ticket to Ride \cite{witter2020applications} and analyzed the computational hardness of the board game backgammon \cite{witter2021backgammon}.
+Beyond the research described in the three areas above, I have worked on several projects informed by my collaborators and the questions that interest me.
+I used linear algebraic insights to model the formation of opinions in social networks, realistically reproducing political polarization even with a simple averaging algorithm \cite{musco2022quantify}.
+I analyzed the computational hardness of the board game backgammon \cite{witter2021backgammon}.
+I explored the board game Ticket to Ride from a graph theoretic perspective and evaluated heuristic strategies that leverage effective resistance \cite{witter2020applications}.
 
 \noindent {\large\textbf{Future Work}}
 
-\noindent My goal is to continue applying the algorithmic design method to achieve problem-specific criteria in impactful domains. I'm particularly excited to collaborate on projects with new colleagues and students.
+I am excited to leverage the skills and insights I have developed in my research to tackle new problems with social impact.
+As a professor, I will focus my research agenda on impactful problems with both theoretical and empirical angles.
+In this way, students can participate in research projects even without a strong theoretical background.
+As an example of my research agenda, I will describe two projects that I am excited to pursue.
 
-\paragraph{Restless Multi-Armed Bandits}
-In my prior work, I studied decision-making optimization at a single time step.
-However, decisions tend to have long-term consequences that are reflected in future time steps.
-The restless multi-armed bandit formulation is a way to integrate the complicated temporal dynamics of sequential decision-making.
-The restless bandit formulation is well-studied particularly in the context of problems with social impact.
-I plan to extend the formulation in two key ways that broaden the applicability of the approach.
-The first way I plan to extend the formulation is to introduce flexibility by considering a constrained \textit{minimization} version of the problem.
-The minimization version allows flexibility in the standard budget constraint which is useful for domains like healthcare where the primary goal is positive outcomes.
-Based on initial results, the minimization formulation is actually quite different from the standard formulation and requires its own algorithms.
-The second way I plan to extend the restless bandit formulation is to introduce stochastic and supermodular costs.
-The extension more accurately reflects the real world where costs are unpredictable and accumulate in interesting ways.
-Based on initial results, the extension requires its own algorithms and mathematical tools.
+I am eager to extend my work on estimator design to other areas with social impact.
+The first project is in the context of wildlife conservation.
+Mark and recapture---where animals are observed in subsequent observations---is a common technique in ecology to estimate the size of a wildlife population.
+However, estimators often rely on strong assumptions that are difficult to verify.
+I plan to develop estimators that incorporate deep learning and offer guarantees even when common assumptions are violated.
 
-\paragraph{Principled Data Driven Decision-Making}
-There are many high stakes domains with big data available but yet decisions are still made in a heuristic way.
-I am interested in applying data driven tools like deep learning and reinforcement learning to make decisions in principled ways.
-One problem in the infrastructure domain is choosing streets to ``open" (open to people, close to cars) for social enrichment.
-Using publicly available data, I plan to design a reinforcement learning algorithm to select streets which, when ``opened," reduce traffic congestion and collisions.
-Another problem in the environmental domain is choosing how to deploy fire fighting resources in large wildfires.
-Using publicly available data, I plan to design a deep learning algorithm to predict what the wildfire will do and a reinforcement learning algorithm to suggest where resources should be directed to minimize negative impacts.
-
-\paragraph{Treatment Effect Estimation for Natural Experiments}
-Estimating treatment effect is an important problem for understanding the impact of nonprofit work.
-Unfortunately, the standard approach is to use randomized trials which are expensive and often infeasible especially for under-resourced non-profits.
-Instead, I plan to design algorithms that estimate treatment effect from natural experiments.
-The technical challenge is that the treatment assignment is not random and the treatment and control groups may be different.
-The problem has been studied by the statistics community but the algorithms are optimized only for the asymptotic regime rather than the finite sample regime.
-I will design estimators that have provably low variance and benefit from learning the structure of the outcomes.
-I will then compare the estimators against prior work on real data-sets.
+The second project is in the context of explainable AI.
+A popular approach to explaining the predictions of a machine learning model is to assign `credit' to the features of the input, quantities known as Shapley values.
+However, exactly computing Shapley values can require an exponential number of computations with respect to the number of features.
+I plan to leverage a beautiful theoretical connection to linear regression and develop an estimator that provably approximates Shapley values with only a linear number of computations.
 
 \noindent {\large\textbf{Conclusion}}
 
-\noindent Even though the applications are varied, my research applies the algorithmic design method to achieve problem-specific criteria.
-I view my research as both a social good and a social pursuit.
-Designing algorithms requires making connections to mathematical ideas and learning from my collaborators.
-As I transition to a new stage in my academic career,
-I look forward to collaborating with my new colleagues and students.
+Throughout my research, I have been driven to tackle complex problems, exploring connections between seemingly disparate areas and developing novel algorithmic solutions.
+My work has spanned a diverse set of domains, from machine learning to quantum computing.
+I have been privileged to collaborate with wonderful researchers, domain experts, nonprofits, and students, yielding impactful contributions at the intersection of theory and practice.
+Looking forward, I aim to leverage my research experience to address impactful social problems, foster interdisciplinary collaborations and mentor students in an inclusive and supportive environment.
 
-% \newpage
+\paragraph{}
+
 \bibliographystyle{abbrv}
 \bibliography{references}	
-\textit{As is the custom in theoretical computer science, authors are listed in alphabetical order unless otherwise specified with an asterisk.}
+\textit{*As is the custom in theoretical computer science, authors are listed in alphabetical order unless otherwise specified with an asterisk.}
 
 \end{document}
