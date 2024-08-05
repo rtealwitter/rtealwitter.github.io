@@ -9,31 +9,77 @@
 	\large{R. {\color{teal}Teal} Witter}
 \end{center}
 
-I love research: the challenge of a difficult problem, the connection between two seemingly different ideas, the surprise when my intuition fails, and the deep insight when I dig in to topics that previously confused me.
-My research spans diverse domains, reflecting the expertise of the brilliant people I get to work with and the questions that fascinate me.
-This interdisciplinary nature of my work enables the cross-pollination of ideas and fosters innovative algorithmic solutions.
+I love research: the challenge of a difficult problem, the connection between two seemingly different ideas, the surprise when my intuition fails, and the deep insight when an idea finally clicks.
 
-As an algorithmic generalist, I leverage mathematical insights to tackle computational problems, guided by the following questions:
+As an algorithmic generalist, I leverage mathematical insights to tackle computational problems.
+While my research spans a diverse set of domains, I am often guided by the following questions:
 How can we \textit{design} better---more accurate, robust, efficient, and simple---algorithms for the problem at hand?
 How can we \textit{analyze} these algorithms to mathematically understand their properties and limitations?
-I am particularly excited about applying novel techniques to answer these questions in settings with significant social impact, where resources may be limited.
+By considering these questions across disciplines, I have built an extensive practical and theoretical toolkit.
+I am particularly excited to apply this toolkit in under-resourced domains where algorithmic solutions have the potential for significant social impact.
 
-I have been privileged to collaborate with many wonderful researchers and domain experts.
-I have co-authored 10 peer-reviewed papers with researchers from across seven academic institutions.
-I have also advised three undergraduate research projects, guiding four students in their first research experiences.
-I have worked closely with one nonprofit organization, helping them to measure the impact of their work.
-Looking forward, I am eager to establish new collaborations with colleagues from diverse backgrounds, mentor student projects that drive meaningful impact, and focus my research on problems with significant social impact.
+My academic research is really the story of many wonderful people.
+I have co-authored 10 peer-reviewed papers (and four preprints) with researchers from across seven academic institutions, learning from and collaborating with brilliant people on questions that fascinate us.
+I have advised three undergraduate research projects, guiding four students in their first research experiences.
+I have worked closely with one nonprofit organization, leveraging my expertise to support the expansion of their work.
+Looking forward, I am eager to establish new collaborations with colleagues from diverse backgrounds, mentor student projects that drive meaningful change, and focus my research on problems with significant social impact.
 By doing so, I aim to continue producing innovative research that benefits the academic community and society at large.
 
 \noindent {\large\textbf{Machine Learning for Social Good}}
 
-My recent research focuses on applying machine learning to problems with social impact.
+The primary focus of my research is applying machine learning to projects with the potential for social good.
+I have worked to improve methods for explainable AI, measure the impact of nonprofits from natural experiments, and simplify fairness algorithms.
+
+In the age of big data, explaining machine learning predictions is crucial to deploying AI in high stakes domains.
+Inspired by game theory, Shapley values are a widely used method for attributing predictions to $n$ data features.
+However, exactly computing Shapley values requires $\Omega(2^n)$ time, so approximation algorithms are often necessary.
+In recent work, I proposed a single-line modification to one of the most popular methods for computing Shapley values, Kernel SHAP.
+Inspired by an elegant mathematical connection to linear regression, the modification improves the algorithm's accuracy, enabling a simple implementation to outperform the extensively optimized official version.
+While there is no theoretical guarantee on the performance of Kernel SHAP, I show that the modified Kernel SHAP is provably accurate:
+With high probability, the modified Kernel SHAP algorithm returns a solution which is within a $(1+\epsilon)$ multiplicative factor of the true Shapley values with only $\tilde{O}(n/\epsilon^2)$ time.
+The result proves that Shapley values can be effectively approximated by (a modified version of) Kernel SHAP in almost linear time.
+
+Measuring impact of a treatment is a crucial problem in many social settings.
+In recent work, collaborate with RORCO to measure impact of their work
+Particularly challenging because treatments are correlated with outcomes by design: direct literacy help to the students who need it most.
+Well studied problem and evaluate effect according to 20+ estimators, but observe differing results.
+Create benchmark using synthetic outcomes designed in consultation with domain experts.
+Observe doubly robust estimators give best performance, including on five other causal inference datasets.
+To avoid complicated statistical dependence,
+theoretically investigate doubly robust estimators with training-testing split.
+Exactly characterize finite variance in this setting and propose algorithm with novel loss function inspired by variance characterization.
+Already, impact to RORCO fundraising, help with expansion of their program.
+
+Making predictions fairly is crucial to positive impact.
+In recent work, incorporate unavoidable uncertainy in fair way.
+How to make prediction when uncertain?
+Answered in haphazard way by prior work.
+Unify setting with extensive benchmark for both classification and regression tasks.
+Find that a simple algorithm gives best uncertainty predictions in classification setting.
+Propose uncertainty-aware statistical parity definition
+In regression setting, find that incorporating uncertainty can decrease statistical parity without any explicit intervention.
+Before, simplify complicated definition of fairness under a mild assumption on groups.
+Counterfactual fairness gets attributes source of performance to `latent' attributes and only uses latent attributes for predictions.
+We show mathematically that if latent attributes are statistically the same, as they are between demographic groups, counterfactual fairness is actually equivalent to the far simpler definition of statistical parity.
+Results show how simple algorithms meet and even exceed more complicated approaches for achieving fairness.
+
 A fundamental problem for nonprofit organizations is to measure the impact of their work.
 Ideally, nonprofits would use a longitudinal randomized controlled trial to measure the effect of their `treatment', but this is often infeasible due to cost and ethical concerns.
 In my work, I developed and theoretically analyzed an algorithm that estimates treatment effect from observational data even when treatment is assigned in a non-random way.
 The algorithm uses a regression adjustment with a novel loss function that is robust to non-random treatment assignments.
 I collaborated with Reach Out and Read Colorado (RORCO), a nonprofit that provides free books and a `prescription for reading' to children at pediatric check-ups, to tune the algorithm to address their setting and evaluate its performance on their data.\footnote{\url{https://github.com/rtealwitter/naturalexperiments}}
 Already, RORCO has used my results to bolster their fundraising and expand their work.
+
+I have also worked on several projects to improve the fairness of machine learning algorithms.
+When making predictions in real life, algorithms necessarily struggle to capture the underlying randomness of the world.
+Understanding this uncertainty and accounting for it in algorithms is important for making fair decisions.
+In my work, I built an extensive benchmark to evaluate methods for incorporating uncertainty into fairness-aware algorithms.
+Leveraging the benchmark, I developed a novel algorithm for regression problems incorporating uncertainty that can reduce unfairness without any explicit fairness intervention.\footnote{\url{https://github.com/rtealwitter/fairlyuncertain}}
+In another fairness project, I theoretically analyzed the relationship between two popular fairness definitions, counterfactual fairness and demographic parity.
+While counterfactual fairness is difficult to measure, I showed that it is equivalent to demographic parity under a common assumption in social settings \cite{rosenblatt2023counterfactual}.
+Since demographic parity is easier to measure and design algorithms to achieve, my results offer a simpler method to achieve and measure counterfactual fairness.
+
+\noindent {\large\textbf{Optimization with Social Impact}}
 
 Living in New York City, I have seen firsthand the negative impact of traffic congestion.
 An increasingly popular approach to improve urban environments is to close streets to cars and open them to people, a practice known as `open streets'.
@@ -44,27 +90,20 @@ The algorithm uses graph neural networks to incorporate the complex spatial rela
 The algorithm was evaluated on real data from the New York City Department of Transportation and showed a reduction in congestion and collisions compared to the current method of opening streets.
 In contrast to the current application-based approach that biases the benefit towards well-resourced neighborhoods, the model offers an objective and data-based approach for selecting open streets.\footnote{\url{https://github.com/rtealwitter/OpenStreets}}
 
-I have also worked on several projects to improve the fairness of machine learning algorithms.
-When making predictions in real life, algorithms necessarily struggle to capture the underlying randomness of the world.
-Understanding this uncertainty and accounting for it in algorithms is important for making fair decisions.
-In my work, I built an extensive benchmark across ten datasets to evaluate methods for incorporating uncertainty into fairness-aware algorithms.
-Leveraging the benchmark, I developed a novel algorithm for regression problems incorporating uncertainty that can reduce unfairness without any explicit fairness intervention and a simple algorithm for classification problems that outperforms more complex methods from prior work.\footnote{\url{https://github.com/rtealwitter/fairlyuncertain}}
-In another fairness project, I theoretically analyzed the relationship between two popular fairness definitions, counterfactual fairness and demographic parity.
-While counterfactual fairness is difficult to measure, I showed that it is equivalent to demographic parity under a common assumption in social settings \cite{rosenblatt2023counterfactual}.
-Since demographic parity is easier to measure and design algorithms to achieve, my results offer a simpler method to achieve and measure counterfactual fairness.
-
-\noindent {\large\textbf{Sequential Decision-Making}}
-
-Theoretical understanding is an important component of designing algorithms that are both efficient and accurate.
-Leveraging the relative simplicity of sequential decision-making problems, my research theoretically explored the properties and limitations of different algorithmic techniques.
-In particular, I explored the relationships between optimization problems, the power of adaptivity in decision-making, and the effectiveness of local search algorithms.
-
 Restless multi-armed bandits are a classic problem in sequential decision-making that exemplify the trade-off between exploration and exploitation.
 Traditionally, the goal is to maximize reward obtained from activating a sequence of arms subject to a budget constraint.
 In my work, I extended the restless bandit formulation to include a minimization objective, allowing for more flexibility than the standard budget constraint.
 I found a reduction to polynomial-space Turing machines, showing the minimization problem is PSPACE-hard, just like the maximization problem.
 However, in experiments and theoretical results, I demonstrated that minimization problem is fundamentally different and requires new algorithms and insights.
 My work is a first step towards understanding the minimization problem.
+
+Opinion dynamics \cite{musco2022quantify}
+
+\noindent {\large\textbf{Discrete Optimization}}
+
+Theoretical understanding is an important component of designing algorithms that are both efficient and accurate.
+Leveraging the relative simplicity of sequential decision-making problems, my research theoretically explored the properties and limitations of different algorithmic techniques.
+In particular, I explored the relationships between optimization problems, the power of adaptivity in decision-making, and the effectiveness of local search algorithms.
 
 In addition to exploring the relationship between optimization problems, I have worked on testing the limits of algorithmic techniques in the context of Boolean function evaluation.
 Given a Boolean function on $n$ bits, the goal is to evaluate the function on an unknown input with as few queries as possible.
@@ -75,8 +114,6 @@ The results suggest that adaptivity is generally beneficial unless the function 
 In addition to adaptivity, I have also explored the power of local search algorithms with any-time guarantees for sequential decision-making problems.
 In my work, I proved that a local search algorithm that outputs a diverse set of solutions has a constant approximation factor that approaches that of the best known greedy algorithm \cite{hellerstein2022local}.
 The results suggest that local search algorithms can be a powerful complement to greedy algorithms especially when solutions should be diverse or robust.
-
-\noindent {\large\textbf{Quantum Computing}}
 
 Quantum computers have the potential to revolutionize computing by harnessing the quantum mechanical properties of superposition and entanglement.
 However, because building quantum computers at scale is so challenging, it is important to theoretically analyze how useful quantum computers will be.
@@ -95,7 +132,6 @@ In my work, I showed that numerical solutions to the SDP can still give query-op
 The results open the door to numerically-derived quantum algorithms that are nearly query-optimal.\footnote{\url{https://github.com/rtealwitter/QuantumQueryOptimizer}}
 
 Beyond the research described in the three areas above, I have worked on several projects informed by my collaborators and the questions that interest me.
-I used linear algebraic insights to model the formation of opinions in social networks, realistically reproducing political polarization even with a simple averaging algorithm \cite{musco2022quantify}.
 I analyzed the computational hardness of the board game backgammon \cite{witter2021backgammon}.
 I explored the board game Ticket to Ride from a graph theoretic perspective and evaluated heuristic strategies that leverage effective resistance \cite{witter2020applications}.
 
