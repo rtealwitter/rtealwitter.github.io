@@ -152,6 +152,3 @@ for the deep learning [class](https://www.rtealwitter.com/deeplearning2023/) I t
 I curated code-based [demos](https://github.com/rtealwitter/dl-demos) that accompany Chinmay Hegde's graduate deep learning [class](https://chinmayhegde.github.io/dl-notes/) at NYU and my own undergraduate deep learning [class](https://www.rtealwitter.com/deeplearning2023/) at Middlebury. Recordings of the demos are available [here](https://www.youtube.com/playlist?list=PL7H4NHNKlP-lPKJxbozO8vESzXr_YPVdm).
 
 After struggling for years, I compiled a [how-to guide](hpc/how-to.html) for NYU's high performance computing cluster.
-
-I am on the academic job market for Fall 2024.
-My [research statement](apps/research.pdf), [teaching statement](apps/teaching.pdf), and my [diversity statement](apps/diversity.pdf).
