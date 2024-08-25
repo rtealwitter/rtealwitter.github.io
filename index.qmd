@@ -11,16 +11,17 @@ output:
 
 ___ 
 
-<img src="files/headshot.jpeg" style="float: right" width="200" />
+<img src="files/headshot.jpeg" style="float: left; padding: 0px 20px 0px 0px;" width="300"/>
 I am a PhD candidate at NYU Tandon where I am fortunate to be advised 
 by [Lisa Hellerstein](https://cse.engineering.nyu.edu/~hstein/) and [Chris Musco](https://www.chrismusco.com/). 
-My research is generously supported by an NSF Graduate Research Fellowship.
+My work is generously supported by an NSF Graduate Research Fellowship.
 
-My primary research focuses on how deep learning, discrete optimization, and randomized algorithms can help solve problems with social impact. I am also interested in designing algorithms for quantum computers and how to make these algorithms robust to errors.
+I design and analyze algorithms, leveraging ideas from theoretical computer science and machine learning.
+My recent research has focused on randomized algorithms for problems with social impact.
 
 I received my undergraduate degrees in Mathematics and Computer Science from Middlebury College.
 At Middlebury, I designed quantum algorithms for graph theory problems with [Shelby Kimmel](http://shelbykimmel.com/)
-and worked on applications of math in recreational board games with [Alex Lyford](https://www.middlebury.edu/academics/math/faculty/node/550503).
+and applied mathematical ideas to board games with [Alex Lyford](https://www.middlebury.edu/academics/math/faculty/node/550503).
 
 ### Education
 
@@ -141,14 +142,16 @@ Conference on the Theory of Quantum Computation, Communication and Cryptography 
 ### More Writing
 
 --- 
+I wrote lecture notes to accompany Chris Musco's graduated algorithmic machine learning and data science [class](https://www.chrismusco.com/amlds2023/). I used a subset of these notes for my own randomized algorithms for data science [class](https://www.rtealwitter.com/rads2024/).
+
 I developed code-based tutorials on [adversarial image attacks](https://github.com/rtealwitter/dl-demos/blob/217fb01a7f2c3b15f0d7f72a00235016afbd9c4c/generative/Adversarial%20Image%20Classification.ipynb), [neural style transfer](https://github.com/rtealwitter/dl-demos/blob/217fb01a7f2c3b15f0d7f72a00235016afbd9c4c/generative/Neural%20Style%20Transfer.ipynb), [variational autoencoders](https://github.com/rtealwitter/dl-demos/blob/217fb01a7f2c3b15f0d7f72a00235016afbd9c4c/generative/Image%20Reconstruction.ipynb), and [diffusion](https://github.com/rtealwitter/dl-demos/blob/217fb01a7f2c3b15f0d7f72a00235016afbd9c4c/generative/Diffusion.ipynb) for Chris Musco's graduate machine learning [class](https://www.chrismusco.com/machinelearning2023_grad/).
 
 I wrote notes on 
 [contrastive learning](https://www.rtealwitter.com/deeplearning2023/contrastive.html), 
 [stable diffusion](https://www.rtealwitter.com/deeplearning2023/diffusion.html), and 
 [implicit regularization](https://www.rtealwitter.com/deeplearning2023/regularization.html)
-for the deep learning [class](https://www.rtealwitter.com/deeplearning2023/) I taught at Middlebury.
+for my deep learning [class](https://www.rtealwitter.com/deeplearning2023/).
 
-I curated code-based [demos](https://github.com/rtealwitter/dl-demos) that accompany Chinmay Hegde's graduate deep learning [class](https://chinmayhegde.github.io/dl-notes/) at NYU and my own undergraduate deep learning [class](https://www.rtealwitter.com/deeplearning2023/) at Middlebury. Recordings of the demos are available [here](https://www.youtube.com/playlist?list=PL7H4NHNKlP-lPKJxbozO8vESzXr_YPVdm).
+I curated code-based [demos](https://github.com/rtealwitter/dl-demos) that accompany Chinmay Hegde's graduate deep learning [class](https://chinmayhegde.github.io/dl-notes/) and my own undergraduate deep learning [class](https://www.rtealwitter.com/deeplearning2023/). Recordings of the demos are available [here](https://www.youtube.com/playlist?list=PL7H4NHNKlP-lPKJxbozO8vESzXr_YPVdm).
 
 After struggling for years, I compiled a [how-to guide](hpc/how-to.html) for NYU's high performance computing cluster.
