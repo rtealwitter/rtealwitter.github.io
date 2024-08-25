@@ -11,7 +11,7 @@ output:
 
 ___ 
 
-<img src="files/headshot.jpeg" style="float: left; padding: 0px 20px 0px 0px;" width="300"/>
+<img src="files/headshot.jpeg" style="float: left; padding: 0px 20px 0px 0px;" width="330"/>
 I am a PhD candidate at NYU Tandon where I am fortunate to be advised 
 by [Lisa Hellerstein](https://cse.engineering.nyu.edu/~hstein/) and [Chris Musco](https://www.chrismusco.com/). 
 My work is generously supported by an NSF Graduate Research Fellowship.
