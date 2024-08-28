@@ -11,7 +11,11 @@ output:
 
 ___ 
 
-<img src="files/headshot.jpeg" style="float: left; padding: 0px 20px 0px 0px;" width="330"/>
+<div class="header-image">
+<img src="files/headshot.jpeg" style="float: left; padding: 5px 10px 0px 0px;" width="300"/>
+</div>
+
+<div class="header-text">
 I am a PhD candidate at NYU Tandon where I am fortunate to be advised 
 by [Lisa Hellerstein](https://cse.engineering.nyu.edu/~hstein/) and [Chris Musco](https://www.chrismusco.com/). 
 My work is generously supported by an NSF Graduate Research Fellowship.
@@ -20,8 +24,9 @@ I design and analyze algorithms, leveraging ideas from theoretical computer scie
 My recent research has focused on randomized algorithms for problems with social impact.
 
 I received my undergraduate degrees in Mathematics and Computer Science from Middlebury College.
-At Middlebury, I designed quantum algorithms for graph theory problems with [Shelby Kimmel](http://shelbykimmel.com/)
-and applied mathematical ideas to board games with [Alex Lyford](https://www.middlebury.edu/academics/math/faculty/node/550503).
+At Middlebury, I designed and analyzed quantum algorithms with [Shelby Kimmel](http://shelbykimmel.com/)
+and applied math to board games with [Alex Lyford](https://www.middlebury.edu/academics/math/faculty/node/550503).
+</div>
 
 ### Education
 
