@@ -71,6 +71,12 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
+**[Minimizing Cost Rather Than Maximizing Reward in Restless Multi-Armed Bandits](https://arxiv.org/abs/2409.03071)\***
+
+**R. Teal Witter, Lisa Hellerstein**
+
+Preprint
+
 **[I Open at the Close: A Deep Reinforcement Learning Evaluation of Open Streets Initiatives](https://arxiv.org/abs/2312.07680)\***
 
 **R. Teal Witter, Lucas Rosenblatt**
