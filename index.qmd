@@ -71,6 +71,12 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
+**[Benchmarking Estimators for Natural Experiments: A Novel Dataset and a Doubly Robust Algorithm](https://arxiv.org/abs/2409.04500)\***
+
+**R. Teal Witter, Christopher Musco**
+
+Preprint
+
 **[Minimizing Cost Rather Than Maximizing Reward in Restless Multi-Armed Bandits](https://arxiv.org/abs/2409.03071)\***
 
 **R. Teal Witter, Lisa Hellerstein**
