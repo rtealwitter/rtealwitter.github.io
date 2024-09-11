@@ -5,3 +5,11 @@ h1 {
 h1, h2, h3, h4 {
   color: rgb(69, 137, 51);
 }
+
+div.item p {
+  margin-bottom: 2px; /* Adjust the value to control spacing */
+}
+
+div.item {
+  margin-top: 15px; /* Adjust to control the space before the list starts */
+}

@@ -12,7 +12,7 @@ output:
 ___ 
 
 <div class="header-image">
-<img src="files/headshot.jpeg" style="float: left; padding: 5px 10px 0px 0px;" width="300"/>
+<img src="files/headshot.jpeg" style="float: left; padding: 5px 10px 0px 0px;" width="350"/>
 </div>
 
 <div class="header-text">
@@ -32,38 +32,66 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
 
 --- 
 
+<div class="item">
+
 **New York University**
 
 *PhD in Computer Science • September 2020 - Present*
 
+</div>
+
+<div class="item">
+
 **Middlebury College**
 
 *BA in Mathematics, BA in Computer Science • Summa Cum Laude • February 2017 - May 2020*
+
+</div>
 
 
 ### Teaching
 
 ---
 
+<div class="item">
+
 **Middlebury CSCI 1052: Randomized Algorithms for Data Science**
 
 *Course Instructor ([Winter 2024](https://www.rtealwitter.com/rads2024/))*
+
+</div>
+
+<div class="item">
 
 **Middlebury CSCI 1051: Deep Learning**
 
 *Course Instructor ([Winter 2023](https://www.rtealwitter.com/deeplearning2023/))*
 
+</div>
+
+<div class="item">
+
 **NYU CS-GY 6953: Deep Learning**
 
 *Course Assistant (Fall 2022, Spring 2023, Fall 2023)*
+
+</div>
+
+<div class="item">
 
 **NYU CS-GY 6763: Algorithmic Machine Learning and Data Science**
 
 *Course Assistant (Fall 2021, Spring 2022, Fall 2023)*
 
+</div>
+
+<div class="item">
+
 **NYU CS-GY 6923: Machine Learning**
 
 *Course Assistant (Spring 2021, Spring 2023)*
+
+</div>
 
 ### Papers
 
@@ -71,11 +99,17 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
+<div class="item">
+
 **[Benchmarking Estimators for Natural Experiments: A Novel Dataset and a Doubly Robust Algorithm](https://arxiv.org/abs/2409.04500)\***
 
 **R. Teal Witter, Christopher Musco**
 
 Preprint
+
+</div>
+
+<div class="item">
 
 **[Minimizing Cost Rather Than Maximizing Reward in Restless Multi-Armed Bandits](https://arxiv.org/abs/2409.03071)\***
 
@@ -83,13 +117,19 @@ Preprint
 
 Preprint
 
+</div>
+
+<div class="item">
+
 **[I Open at the Close: A Deep Reinforcement Learning Evaluation of Open Streets Initiatives](https://arxiv.org/abs/2312.07680)\***
 
 **R. Teal Witter, Lucas Rosenblatt**
 
 AAAI Conference on Artificial Intelligence (AAAI 2024)
 
+</div>
 
+<div class="item">
 
 **[Robust and Space-Efficient Dual Adversary Quantum Query Algorithms](https://arxiv.org/abs/2306.15040)**
 
@@ -97,8 +137,9 @@ AAAI Conference on Artificial Intelligence (AAAI 2024)
 
 European Symposium on Algorithms (ESA 2023)
 
+</div>
 
-
+<div class="item">
 
 **[Counterfactual Fairness Is Basically Demographic Parity](https://arxiv.org/abs/2208.03843)**
 
@@ -106,7 +147,9 @@ European Symposium on Algorithms (ESA 2023)
 
 AAAI Conference on Artificial Intelligence (AAAI 2023)
 
+</div>
 
+<div class="item">
 
 **[A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)**
 
@@ -114,7 +157,9 @@ AAAI Conference on Artificial Intelligence (AAAI 2023)
 
 International Symposium on Algorithms and Computation (ISAAC 2022)
 
+</div>
 
+<div class="item">
 
 **[Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)**
 
@@ -122,7 +167,9 @@ International Symposium on Algorithms and Computation (ISAAC 2022)
 
 Workshop on Approximation and Online Algorithms (WAOA 2022)
 
+</div>
 
+<div class="item">
 
 **[How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)**
 
@@ -130,7 +177,9 @@ Workshop on Approximation and Online Algorithms (WAOA 2022)
 
 International Workshop on Mining and Learning with Graphs (MLG 2022)
 
+</div>
 
+<div class="item">
 
 **[Backgammon is Hard](https://arxiv.org/abs/2106.16172)**
 
@@ -138,11 +187,19 @@ International Workshop on Mining and Learning with Graphs (MLG 2022)
 
 International Conference on Combinatorial Optimization and Applications (COCOA 2021)
 
+</div>
+
+<div class="item">
+
 **[A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)**
 
 **Shelby Kimmel, R. Teal Witter**
 
 Algorithms and Data Structures Symposium (WADS 2021)
+
+</div>
+
+<div class="item">
 
 **[Applications of Graph Theory and Probability in the Board Game Ticket to Ride](https://dl.acm.org/doi/10.1145/3402942.3402963)\***
 
@@ -150,11 +207,17 @@ Algorithms and Data Structures Symposium (WADS 2021)
 
 International Conference on the Foundations of Digital Games (FDG 2020)
 
+</div>
+
+<div class="item">
+
 **[Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)**
 
 **Kai DeLorenzo, Shelby Kimmel, R. Teal Witter**
 
 Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2019)
+
+</div>
 
 ### More Writing
 
