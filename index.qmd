@@ -6,7 +6,7 @@ output:
 ---
 
 <center>
-370 Jay St. Brooklyn, NY • rtealwitter [at] nyu.edu • [CV](apps/cv.pdf) • [Github](https://github.com/rtealwitter) • [Google Scholar](https://scholar.google.com/citations?user=B2hIq-cAAAAJ&hl=en)
+370 Jay St. Brooklyn, NY • rtealwitter [at] nyu.edu • [CV](apps/cv.pdf) • [Github](https://github.com/rtealwitter) • [Google Scholar](https://scholar.google.com/citations?hl=en&user=B2hIq-cAAAAJ&view_op=list_works&sortby=pubdate)
 </center>
 
 ___ 
