@@ -105,7 +105,7 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
 
 **R. Teal Witter, Christopher Musco**
 
-Preprint
+Conference on Neural Information Processing Systems (NeurIPS 2024)
 
 </div>
 
