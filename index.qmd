@@ -99,6 +99,49 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
 
 *Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
 
+<!--
+<div class="item">
+  
+**Leverage SHAP: Estimating Shapley Values with Leverage Score Sampling**
+
+**Christopher Musco, R. Teal Witter**
+
+Preprint
+
+</div>
+
+<div class="item">
+  
+**Kernel Banzhaf: A fast and Robust Estimator for Banzhaf Values\***
+
+**Yurong Liu, R. Teal Witter, Flip Korn, Tarfah Alrashed, Dimitris Paparas, Julian Friere**
+
+Preprint
+
+</div>
+
+<div class="item">
+  
+**Hidden in the Noise: Two-Stage Robust Watermarking for Images**
+
+**Kasra Arabi, Benjamin Feuer, R. Teal Witter, Chinmay Hegde, Niv Cohen**
+
+Preprint
+
+</div>
+
+<div class="item">
+  
+**Hidden in the Noise: Two-Stage Robust Watermarking for Images**
+
+**Lucas Rosenblatt, R. Teal Witter**
+
+Preprint
+
+</div>
+-->
+
+
 <div class="item">
 
 **[Benchmarking Estimators for Natural Experiments: A Novel Dataset and a Doubly Robust Algorithm](https://arxiv.org/abs/2409.04500)\***

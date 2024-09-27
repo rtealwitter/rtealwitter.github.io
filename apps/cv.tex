@@ -16,6 +16,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
+\usepackage{enumitem}
 
 % personal data
 \name{R. Teal}{Witter}
@@ -30,10 +31,10 @@
 
 \section{Education}
 \cventry{September 2020--Present}{PhD in Computer Science}{New York University}{New York, NY}{}{Advised by \href{https://cse.engineering.nyu.edu/~hstein/}{Lisa Hellerstein} and \href{https://www.chrismusco.com/}{Christopher Musco}}  % arguments 3 to 6 can be left empty
-\cventry{February 2017--May 2020}{BA in Mathematics, BA in Computer Science}{Middlebury College}{Middlebury, VT}{}{Phi Beta Kappa}
+\cventry{February 2017--May 2020}{BA in Mathematics, BA in Computer Science}{Middlebury College}{Middlebury, VT}{}{Phi Beta Kappa, Summa Cum Laude}
 
 \section{Research Interests}
-Algorithms for Social Good $\bullet$ Explainable AI $\bullet$ Randomized Linear Algebra $\bullet$ Machine Learning $\bullet$ Discrete Optimization $\bullet$ Graph Theory $\bullet$ Quantum Computing
+Algorithms for Social Good $\bullet$ Explainable AI  $\bullet$ Fairness $\bullet$ Randomized Linear Algebra $\bullet$ Machine Learning $\bullet$ Deep Learning $\bullet$ Discrete Optimization $\bullet$ Graph Theory $\bullet$ Quantum Computing
 
 \section{National Awards}
 
@@ -49,13 +50,34 @@ Algorithms for Social Good $\bullet$ Explainable AI $\bullet$ Randomized Linear 
 \cventry{Spring 2021, Spring 2023}{Course Assistant}{Machine Learning}{NYU CS-GY 6923}{}{}
 
 % Publications from a BibTeX file using the biblatex package
-\section{Papers}
+\section{Preprints}
 \textit{In the tradition of theoretical computer science, authors appear in alphabetical order unless otherwise marked with an asterisk.}
 
-\begin{refsection}
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\begin{enumerate}[label={[\arabic*]},align=left]
+    \item Y. Liu, R. T. Witter, F. Korn, T. Alrashed, D. Paparas, J. Freire. \textit{Kernel Banzhaf: A Fast and Robust Estimator for Banzhaf Values}. 2024.*
+    \item C. Musco, R. T. Witter. \textit{Leverage SHAP: Estimating Shapley Values with Leverage Score Sampling}. 2024.*
+    \item K. Arabi, B. Feuer, R. T. Witter, C. Hegde, N. Cohen. \textit{Hidden in the Noise: Two-Stage Robust Watermarking for Images}. 2024.*
+    \item R. T. Witter, L. Rosenblatt. \textit{FairlyUncertain: A Comprehensive Evaluation of Uncertainty in Algorithmic Fairness}. 2024.*
+    \item R. T. Witter, L. Hellerstein. \textit{Minimizing Cost Rather Than Maximizing Reward in Restless Multi-Armed Bandits}. 2024.*
+\end{enumerate}
+
+
+\section{Peer-Reviewed Publications}
+
+\begin{enumerate}[label={[\arabic*]},align=left]
+    \setcounter{enumi}{5}
+    \item R. T. Witter and C. Musco. \textit{Benchmarking Estimators for Natural Experiments: A Novel Dataset and a Doubly Robust Algorithm}. Conference on Neural Information Processing Systems, 2024.*
+    \item R. T. Witter and  L. Rosenblatt. \textit{I Open at the Close: A Deep Reinforcement Learning Evaluation of Open Streets Initiatives}. AAAI Conference on Artificial Intelligence, 2024.*
+    \item M. Czekanski, S. Kimmel, R. T. Witter. \textit{Robust and Space-Efficient Dual Adversary Quantum Query Algorithms}. European Symposium on Algorithms, 2023.
+    \item L. Rosenblatt, R. T. Witter. \textit{Counterfactual Fairness Is Basically Demographic Parity}. AAAI Conference on Artificial Intelligence, 2023.*
+    \item L. Hellerstein, D. Kletenik, N. Liu, R. T. Witter. \textit{Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem}. Workshop on Approximation and Online Algorithms, 2022.
+    \item L. Hellerstein, T. Lidbetter, R. T. Witter. \textit{A Local Search Algorithm for the Min-Sum Submodular Cover Problem}. International Symposium on Algorithms and Computation, 2022.
+    \item C. Musco, I. Ramesh, J. Ugander, R. T. Witter. \textit{How to Quantify Polarization in Models of Opinion Dynamics}. International Workshop on Mining and Learning with Graphs, 2022.
+    \item S. Kimmel, R. T. Witter. \textit{A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs}. Algorithms and Data Structures Symposium, 2021.
+    \item R. T. Witter. \textit{Backgammon is Hard}. International Conference on Combinatorial Optimization and Applications, 2021.
+    \item R. T. Witter, A. Lyford. \textit{Applications of Graph Theory and Probability in the Board Game Ticket to Ride}. International Conference on the Foundations of Digital Games, 2020.*
+    \item K. DeLorenzo, S. Kimmel, R. T. Witter. \textit{Applications of the Quantum Algorithm for st-Connectivity}. Conference on the Theory of Quantum Computation, Communication and Cryptography, 2019.
+\end{enumerate}
 
 \section{Talks}
 \textbf{}
