@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\input{../header}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=4cm]{../tandon_long_color.eps}}
+\chead{\Large \textbf{Research Statement}}
+\rhead{\large \href{https://www.rtealwitter.com/}{R. {\color{teal}Teal} Witter}}
+\cfoot{}
+
+\begin{document}
+
+{\setlength{\parindent}{0cm}
+I am a theoretical computer scientist studying algorithms with an eye towards how they can positively impact society. As computing becomes ubiquitous, the design and analysis of algorithms for social good is increasingly important. We want to ensure that algorithms are applied in useful ways (e.g., improving healthcare, education, and transportation) while simultaneously ensuring that algorithms are unbiased (e.g., decisions in hiring, credit loans, and criminal justice are fair and transparent). The growing importance of this area is reflected in the development of recent venues, including the FAccT conference and social impact tracks at major machine learning conferences like AAAI and IJCAI.
+
+I have studied algorithms for social good in the context of explainable AI, evaluation of nonprofit efficacy, fairness in machine learning, resource allocation, and societal polarization. I leverage a broad theoretical toolkit including techniques in randomized linear algebra, linear programming, and the theory of boolean functions. But work in my area also requires deep interdisciplinary engagement with practitioners and stakeholders. To this end, I have worked closely with an early childhood literacy nonprofit and collaborated with researchers across nine institutions, publishing in top venues like NeurIPS, AAAI, and ESA.
+
+\begin{center}
+{\large \textbf{Algorithms for Explainable AI}}
+\end{center}
+
+As AI predictions are increasingly incorporated into high-stakes domains, users and auditors of AI systems should understand why a prediction was made. For example, a credit card applicant should know why their application was rejected, and a defendant should be aware of how their bail was set. In broader societal applications, such as government spending or nonprofit resource allocation, explainability becomes even more critical. It’s not enough to explain individual predictions; stakeholders should have confidence in the entire model’s transparency and reasoning. For example, an early childhood literacy nonprofit benefits from a transparent, simple model to evaluate the impact of their program, allowing them to trust the analysis and use it to guide future decisions
+
+In recent work, I empirically and theoretically improved one of the most popular methods for explaining AI predictions. Shapley values are one of the primary methods in explainable AI, quantifying how changing input features affects model output. (The SHAP paper has more than 25,000 citations and the associated codebase has been used in almost 20,000 Github projects.) One of the most popular and efficient model-agnostic methods for computing Shapley values, Kernel SHAP, exploits an elegant mathematical connection to linear regression but in a heuristic way. In recent work, I used a theoretically motivated technique called leverage score sampling to both empirically and theoretically improve Kernel SHAP \cite{musco2024leverage}. The algorithm I proposed, Leverage SHAP, gives better empirical performance than even the highly optimized official implementation and offers theoretical guarantees, contrasting with Kernel SHAP. In follow-up work, I applied the same leverage score sampling technique to a related but more robust game-theoretic approach called Banzhaf values \cite{liu2024kernel}. Together, my work establishes more efficient and theoretically motivated methods for explaining AI predictions.
+
+A major motivation of computing Shapley values is to add transparency to predictions, so we can either detect unfair decision-making or verify that methods are fair. Fairness is an important topic in machine learning and a major technical and philosophical question is how fairness should be defined and measured. I have contributed research on how to define notions of fairness \cite{rosenblatt2023counterfactual} and measure fairness in the presence of unavoidable uncertainty \cite{witter2024fairlyuncertain}.
+
+A key tenant of explainable AI is algorithmic simplicity, which ensures models are both interpretable and reliable. In collaboration with the early childhood literacy nonprofit Reach Out and Read Colorado (RORCO), I have applied this principle to the challenge of treatment effect estimation. While treatment effect estimation is well-studied, existing algorithms are often complex and yield inconsistent estimates. To address this, I developed a benchmark for evaluating treatment effect estimators and proposed a theoretically-motivated, simple method \cite{witter2024benchmarking}. By leveraging regression tools related to my work on Shapley and Banzhaf values, I introduced a simple yet accurate algorithm that RORCO has already used to inform future program development.
+
+\begin{center}
+{\large \textbf{Online Decision Making in a Dynamic World}}
+\end{center}
+
+My work on explainable AI focuses on algorithms that make predictions based on static data. However, many of the most compelling applications of algorithms for social good involve dynamic systems, where models repeatedly interact with the world. For example, a traffic optimization algorithm suggests a street to open, observes the resulting vehicle flow, and then adapts its next suggestion based on the new conditions. Similarly, an algorithm for reintroducing endangered species makes habitat recommendations, monitors the species’ success, and refines its future suggestions. A major second thread of my work focuses on designing algorithms for these dynamic problems.
+
+The NYC Open Streets Project (closing streets to cars, opening streets to people) is a cost-effective method to modify urban infrastructure. To optimize which streets are opened, I designed a deep reinforcement learning model that incorporates both temporal and spatial data, allowing it to adapt to the city's complex traffic environment while balancing the dual objectives of minimizing congestion and reducing collisions \cite{witter2024i}. By integrating multiple data sources—such as traffic patterns, accident reports, and weather—the model optimizes with a granular view of urban mobility. Developed in collaboration with infrastructure experts, this approach serves as a proof-of-concept for solving dynamic, socially impactful problems, with potential for broad application in urban planning.
+
+Many dynamic problems, such as reintroducing endangered species, involve achieving specific goals while minimizing the cost of actions. These settings can be modeled as resource allocation problems to restless bandits, where actions impact constantly changing environments. The standard formulations of restless multi-armed bandits typically focus on maximizing impact within a cost budget, but they overlook scenarios like wildlife conservation, where achieving a positive impact is the primary constraint. I propose a dual formulation of the restless bandits problem that prioritizes achieving the goal while minimizing costs and show that solving it—even approximately—is PSPACE-hard \cite{witter2024minimizing}. My work lays the foundation for approaching dynamic restless bandit problems with goal constraints, highlighting the need for novel algorithms. Additionally, I have fundamental algorithmic work on other resource allocation problems, such as optimizing the order of actions to maximize reward within a cost framework. In this context, I analyzed an evolutionary algorithm for the Min-Sum Submodular Cover Problem, demonstrating that it provides similar theoretical guarantees as the standard greedy algorithm while offering more diverse solutions \cite{hellerstein2022local}.
+
+Sometimes our goal is not to develop an algorithm, but to use algorithmic tools to model a dynamic process that we observe in the real world. For example, we qualitatively observe that politics is becoming more polarized but we do not have a simple opinion dynamics model for understanding this phenomenon. Prior works have developed increasingly complicated models that exhibit polarization with different contrived dynamics. I took a theoretical lens to view one of the simplest opinion dynamics models under a scale-invariant measure of polarization. In this view, the simple opinion dynamics model exhibits relative polarization, reflecting the phenomenon of political polarization \cite{musco2022quantify}.
+
+\begin{center}
+{\large \textbf{Future Work}}
+\end{center}
+
+While my main research has centered on algorithms for social good, I remain curious about new topics in theoretical computer science and consider myself a generalist. For instance, I have worked on algorithms for efficiently evaluating Boolean functions in both classical \cite{hellerstein2022adaptivity} and quantum settings \cite{czekanski2023robust,kimmel2021query,delorenzo2019applications}. Looking ahead, I hope to continue exploring these and other areas at Cal Poly Pomona, since the topics offer excellent opportunities for undergraduate research. My own journey into computer science research began with strategies for the board game Ticket-to-Ride \cite{witter2020applications} and the computational complexity of Backgammon \cite{witter2021backgammon}, illustrating how accessible topics can spark interest in the field.
+
+By design, my research agenda is multi-faceted, combining theoretical analysis and motivation of algorithms with a focus on practical efficiency and real-world impact. This approach enables students to carve out projects that align with their interests and strengths. Students with a strong mathematical background can leverage creative ideas to design novel algorithms, refining them for theoretical analysis. Students with strong computational skills can focus on efficiently implementing algorithms, identifying and addressing practical concerns.
+
+I have advised four undergraduate and high school students on research projects, and I'm excited to continue involving students in my future work across the following research agenda.
+
+{\large \textbf{Explainable AI Estimators Beyond Shapley and Banzhaf Values}}
+
+Interpreting predictions is key to building transparency and trust in AI systems. In recent work, I designed theoretically-motivated algorithms for estimating game-theoretic explanations of AI predictions, specifically Shapley and Banzhaf values. To enhance these methods, I applied leverage score sampling, exploiting elegant connections between the respective quantities and linear regression problems. There are many game-theoretic quantities beyond Shapley and Banzhaf values that each satisfy different properties that may be particularly relevant to different explainable AI tasks. I plan to identify quantities relevant to different explainable AI tasks and search for connections to linear regression, ideally employing leverage score sampling to the special structure of the problem and yielding efficient algorithms.
+
+{\large \textbf{Active Sampling for Treatment Effect Estimation}}
+
+Simple and accurate treatment effect estimation is key to the decision making of charitable and nonprofit organizations. My treatment effect estimation work with Reach Out and Read Colorado (RORCO) focused on the natural experiment setting where treatments have already been applied. In this setting, I used regression adjustment to design better algorithms. I plan to go beyond natural experiments to the active regression setting where individuals are selected to either receive the ‘treatment’ or ‘control’. I hope to apply leverage score sampling to design efficient estimators that can achieve the same level of accuracy but with fewer selected individuals, limiting the negative impact to individuals that are excluded from the nonprofit’s `treatment’.
+
+{\large \textbf{Distortion-free Watermarking for Responsible AI}}
+
+AI is increasingly relevant around us. Large Language Models (LLMs) have become ubiquitous for text generation and even high-quality images can now be generated from AI models. Responsibly using these tools requires differentiating between human and AI generated content, e.g., to prevent plagiarism or detect malicious actors. Standard techniques for “watermarking” content modify the outputs to make certain words more likely in generated text or add information in the Fourier domain of generated images. But modifications to the output can be detected and eventually forged, potentially allowing malicious actors to fake watermarks. I am interested in distortion-free approaches where the content is generated from the true distribution, and it is only possible to verify the watermark with access to a private correlated variable \cite{arabi2024hidden}. The downside of current distortion-free methods is that the correlated random variable must be stored. I plan to leverage information already present in the image or text to robustly and securely store the correlated variable, enabling efficient distortion-free watermarking and ultimately supporting the responsible use of AI.
+
+{\large \textbf{Conclusion}}
+
+Algorithms are all around us, making our lives better but sometimes introducing biases and harm. My work seeks to improve transparency, explaining the way these models work , designing simple yet effective algorithms that can be trusted by stakeholders, and adding guard rails against the misuse of AI. I leverage both mathematical tools and algorithmic insights to solve impactful problems, iteratively identifying and solving problems with stakeholder input. I am particularly excited to further incorporate students in my research, carving out impactful problems that strengthen the skills of student researchers and encourage learning.
+}
+
+\begingroup
+
+\begin{center}{\large \textbf{References}}\end{center}
+
+\textit{*As is the custom in theoretical computer science, authors are listed in alphabetical order unless otherwise specified with an asterisk.}
+\bibliographystyle{alpha}
+\renewcommand
+\refname{}
+\vspace{-3em}
+\bibliography{references}
+\endgroup
+
+
+\end{document}
