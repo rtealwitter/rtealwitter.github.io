@@ -67,42 +67,32 @@ Further, because of the structure of the Banzhaf linear regression problem, Kern
 { \large \textbf{Future Directions}}
 
 My prior work establishes more efficient and theoretically motivated methods for explaining AI predictions with Shapley and Banzhaf values.
-However, there are still many more game-theoretic quantities that can be used to explain AI predictions in different settings.
-I plan to continue to apply my regression toolkit to design efficient algorithms for computing these game-theoretic quantities, furthering the transparency of AI predictions.
+However, there are still many more game-theoretic quantities which are relevant in different social good applications.
+I plan to continue to apply my theoretical regression toolkit to design efficient algorithms for computing these game-theoretic quantities, furthering the transparency of AI predictions.
 
-I plan to work with stakeholders to identify settings where AI predictions need to be explained for the trust of users.
-Depending on the setting, there are different desirable properties that give reason to game-theoretic attribution techniques.
-I will use my regression toolkit to design efficient algorithms that satisfy the properties most relevant to the stakeholder.
+One under-studied social good setting is graph data, where graph neural networks are used to make predictions.
+Social good applications of graph data include predicting the spread of disease or identifying collusion rings.
+By design, graph neural networks process the features of adjacent nodes to identify local patterns in graph data.
+Because of the high stakes of these applications, it is important to explain why the graph neural network made a prediction.
+Unfortunately, standard game-theoretic attribution quantities like Shapley and Banzhaf values do not take into account the graph structure, and so lose the ability to explain how the graph neural network reasons.
+An alternative game-theoretic quantity designed specifically for graph structures is the Hamiache-Navarro (HN) value.
+The HN value naturally generalizes Shapley values, and can even be derived from a simpler set of properties.
+Mathematically, the HN value is the limit of a series of associated games, which can be represented as repeated matrix multiplication.
+This connection to matrix multiplication suggests that the HN value can be computed via a gradient descent algorithm.
+I plan to investigate the structure of the HN value to recover the underlying problem that gives rise to the gradient descent algorithm.
+If the problem is a linear regression problem as I suspect, I can apply leverage score sampling to design provably accurate algorithms for computing the HN value.
 
-One different setting is graph data, where graph neural networks are used to make predictions.
-By design, the graph neural network manipulates the features of nodes in a graph and then passes relevant information to neighbors.
-In this way, the graph neural network uses graph structure to make more accurate predictions.
-Like in the tabular data setting, it is important to explain why the graph neural network made a prediction.
-Unfortunately, standard game-theoretic attribution techniques do not take into account the graph structure and so lose the ability to explain what the graph neural network is doing.
+Broadly, there is a rich game theory literature to describe attribution techniques from an axiomatic perspective in many settings relevant to social good applications.
+As trustworthy AI becomes increasingly important, the game theory literature is a powerful resource for explaining AI predictions in an axiomatic way.
+But game theorists are interested in describing the properties of these quantities, rather than efficiently computing them.
+The vast majority of prior work develops heuristic algorithms for computing these quantities.
+However, as evidenced by my work on Shapley and Banzhaf values, principled algorithms can exploit theoretically motivated insights to outperform heuristic methods, while simultaneously offering strong non-asymptotic guarantees.
+I plan to apply my regression toolkit to design provably efficient algorithms for computing game-theoretic quantities relevant to social good applications. 
 
-An alternative value is the Hamiache-Navarro (HN) value, which is designed for graph data.
-In fact, when the graph is the complete graph, the HN value recovers the Shapley value.
-Mathematically, the HN value is the limiting value of a series games, which can be thought of as repeated matrix multiplication.
-This connection to matrix multiplication suggests that the HN value can be computed as a gradient descent problem.
-I plan to investigate the structure of the HN value and design efficient algorithms for computing it.
-The matrices are exponentially large and naturally lend themselves to randomized linear algebra techniques.
-Like for Shapley and Banzhaf values, I plan to use leverage score sampling to design efficient algorithms for computing the HN value.
+{ \large \textbf{Collaboration Opportunities at \school}}
 
-In general, there is a rich game theory literature to describe attribution techniques but game theorists interested in describing properties rather than computing these quantities.
-As AI becomes more prevalent, the game theory attribution is an existing toolkit that can be applied in an axiomatic way to explaining predictions.
-However, the existing algorithms are infeasible for large datasets or heuristically designed without guarantees.
-I plan to apply my regression toolkit to design efficient algorithms for computing these game-theoretic quantities, ensuring that AI predictions are transparent and trustworthy.
-
-I will take theoretical techniques to other game-theoretic quantities relevant in social good applications.
-For example, Shapley values sum to the model output, making them desirable for explaining individual predictions.
-Meanwhile, Banzhaf values satisfy an efficiency property that is useful when features are composed of many sub-features (e.g., a loan applicant's net worth is the sum of their assets and liabilities).
-I will build collaborations with stakeholders to identify the settings where they would benefit from transparent and trustworthy AI predictions.
-Once I identify the properties most relevant for the stakeholder, I will investigate the structure of the problem and apply tools from my extensive theoretical toolkit to design efficient algorithms.
-In this way, I plan to combine interdisciplinary engagement with theoretical analysis to solve impactful explainable AI problems.
-
-{ \large \textbf{Collaboration Opportunities}}
-
-Related to game theory and graph algorithms, and regression.
+The problems in explainable AI present a rich landscape of research opportunities, spanning game theory, graph algorithms, and randomized linear algebra.
+I am excited to collaborate with other theoretical computer scientists at \school, building theoretically motivated algorithms with provable performance guarantees.
 
 \begin{center}
     { \large \textbf{Trustworthy Treatment Effect Estimation}}    
