@@ -11,64 +11,64 @@
 
 {\setlength{\parindent}{0cm}
 
-I am a theoretical computer scientist studying algorithms with an eye towards how they can positively impact society. As computing becomes ubiquitous, the design and analysis of algorithms for social good is increasingly important: We need algorithms that are transparent (e.g., a credit card applicant knows why their application was rejected) and
-effective (e.g., a model accurately predicts the impact of a nonprofit program), with adequate guard rails (e.g., AI-generated can be tracked back to its source).
-The growing importance of this area is reflected in the development of recent venues, including the FAccT conference and social impact tracks at major machine learning conferences like AAAI and IJCAI.
+I am a theoretical computer scientist studying algorithms with an eye towards how they can positively impact society.
+As computing becomes ubiquitous, the design and analysis of algorithms for social good is increasingly important.
+My research focuses on the following goals:
+\begin{enumerate}
+    \item \textbf{Explainable AI}: I design methods to more accurately interpret opaque models. %For example, a credit card applicant should know why their application was rejected or approved.
+    \item \textbf{Effective Algorithms}: I develop algorithms to solve problems with social impact. %For example, a nonprofit should be able to accurately evaluate the effect of their work.
+    \item \textbf{Responsible Use of AI}: I implement guard rails to prevent the misuse of AI. %For example, AI-generated should be traceable to its source.
+\end{enumerate}
 
-I have studied algorithms for social good in the context of explainable AI, evaluation of nonprofit efficacy, fairness in machine learning, resource allocation, and societal polarization. I leverage a broad theoretical toolkit including techniques in randomized linear algebra, linear programming, and the theory of boolean functions. Work in my area also requires deep interdisciplinary engagement with practitioners and stakeholders. To this end, I have worked closely with an early childhood literacy nonprofit and collaborated with researchers across nine institutions, publishing in top venues such as NeurIPS, AAAI, and ESA.
+The growing importance of algorithms for social good is reflected in the development of recent venues, including the FAccT conference and social impact tracks at major machine learning conferences like AAAI and IJCAI.
+Many algorithms proposed for social good in these venues and others are heuristic in nature. My work aims to illuminate their theoretical foundations, providing A) \textbf{rigorous guarantees on algorithmic performance and behavior}, and B) \textbf{theoretical insights for the design of more effective and trustworthy algorithms}.
+By bridging the gap between theory and practice, I strive to enhance the reliability and impact of algorithms designed for social good.
 
-Worked on transparent and fair algorithms: fairness \cite{rosenblatt2023counterfactual,witter2024fairlyuncertain}
+I have studied algorithms for social good in the context of explainable AI \cite{musco2024leverage,liu2024kernel}, evaluation of nonprofit efficacy \cite{witter2024benchmarking}, fairness in machine learning \cite{rosenblatt2023counterfactual,witter2024fairlyuncertain}, resource allocation \cite{hellerstein2022local,witter2024i,witter2024minimizing}, and societal polarization \cite{musco2022quantify}. I leverage a broad theoretical toolkit including techniques in randomized linear algebra, linear programming, and the theory of boolean functions. Work in my area also requires interdisciplinary engagement with practitioners and stakeholders. To this end, I have worked closely with an early childhood literacy nonprofit and collaborated with researchers across nine institutions, publishing in top machine learning and theoretical computer science venues such as NeurIPS, ESA, and AAAI.
 
-Worked on algorithms for complicated optimization settings: resource allocation \cite{witter2024minimizing}, societal polarization \cite{musco2022quantify}, and diverse optimization for resource allocation \cite{hellerstein2022local}, and reinforcement learning \cite{witter2024i}.
-
-While my main research has centered on algorithms for social good, I remain curious about new topics in theoretical computer science and consider myself a generalist. For instance, I have worked on algorithms for efficiently evaluating Boolean functions in both classical \cite{hellerstein2022adaptivity} and quantum settings \cite{czekanski2023robust,kimmel2021query,delorenzo2019applications}. Looking ahead, I hope to continue exploring these and other areas at \school, since the topics offer excellent opportunities for undergraduate research. My own journey into computer science research began with strategies for the board game Ticket-to-Ride \cite{witter2020applications} and the computational complexity of Backgammon \cite{witter2021backgammon}, illustrating how accessible topics can spark interest in the field.
-
-%My current research is divided into two main threads.
-%In my work on algorithms for explainable AI, I focus on developing algorithms that provide transparency and trust in AI predictions. 
-%In my work on 
-%In the latter, I design state-of-the-art algorithms for some of the most compelling applications for social good.
-%
-%%I have also worked on a variety of other topics in theoretical computer science, including quantum computing, evolutionary algorithms, and opinion dynamics.
-%In addition to my current work, the third prong of my research agenda is the responsible use of AI.
-%As AI develops at a break-neck speed, there are few guardrails on the use of image and text generation tools.
-%I plan to develop theoretically-motivated algorithms to identify AI generated content, ensuring that AI is used responsibly and ethically.
+In the remainder of this document, I outline my research plans as they relate to the three overarching goals; describing my related work, future plans, and collaboration opportunities for each goal.
 
 \begin{center}
-{ \large \textbf{Accurate Explainable AI}}
+{ \large \textbf{More Accurate Methods for Explainable AI}}
 \end{center}
 
-As AI predictions are increasingly incorporated into high-stakes domains, users and auditors of AI systems should understand why a prediction was made. For example, a credit card applicant should know why their application was rejected, and a defendant should be aware of how their bail was set. 
+As AI predictions are increasingly incorporated into high-stakes domains like finance, law, and healthcare, users and auditors of AI systems should understand why a prediction was made. For example, a credit card applicant should know why their application was rejected, and a defendant should be aware of how their bail was set. 
+Further, explaining AI predictions can help identify biases and interpret learned concepts, supporting the improvement and refinement of future AI algorithms.
 
-Algorithms are deployed in high-stakes domains such as healthcare, finance, and law.
-In these settings, it is crucial that we understand how the algorithms make decisions.
-For example, an applicant for a loan should know why their application was rejected, and a defendant should be aware of how their bail was set.
-Further, explaining AI predictions can help identify and correct biases in the data or model, ensuring that AI algorithms are refined and improved.
+The standard method of explaining AI predictions is to use game-theoretic quantities like Shapley values, quantifying how changes to the input features affect the model output.
+Shapley values are a particularly popular choice because they satisfy four desirable properties: null player, symmetry, additivity, and efficiency.
+However, Shapley values are defined over exponentially terms and are therefore computationally infeasible to compute exactly in general.
+In practice, Shapley values are estimated using heuristics approaches.
+Arguably the most popular and effective estimator for Shapley values is Kernel SHAP.
+Kernel SHAP exploits an elegant connection to linear regression, sampling from an exponentially large linear system to estimate the Shapley values.
+While effective in practice, Kernel SHAP samples heuristically and lacks theoretical guarantees.
 
+{ \large \textbf{My Prior Work}}
 
-{ \large \textbf{My Related Work}}
+I developed a theoretically motivated algorithm for estimating Shapley values, Leverage SHAP, that outperforms Kernel SHAP in practice and offers strong non-asymptotic guarantees \cite{musco2024leverage}.
+The starting point of my work was an insight from randomized linear algebra: regression problems can be effectively subsampled using statistical leverage scores.
+The benefit of leverage scores is that they quantify the importance of each data point in the regression problem.
+Instead of sampling from the exponentially large linear system via a heuristic weighting as in Kernel SHAP, Leverage SHAP, as its name suggests, samples according to leverage scores.
+This sampling technique is theoretically motivated and offers strong non-asymptotic guarantees.
+Modifying the standard leverage score analysis to several standard optimizations used for estimating Shapley values, I showed that Leverage SHAP can provably recover accurate Shapley values with almost a linear number of samples.
+Further, not only does leverage score sampling offer theoretical guarantees, but the theoretically motivated Leverage SHAP also outperforms even a highly optimized version of Kernel SHAP in practice.
 
-Shapley values are popular but they're heuristically estimated in practice.
-I used a linear regression connection to principally design the Leverage SHAP algorithm.
-Because of the leverage scores, Leverage SHAP offers strong non-asymptotic guarantees.
-Further, in extensive experiments across a variety of datasets, Leverage SHAP outperforms the highly optimized Kernel SHAP algorithm.
-Shapley values are widely used because they satisfy four desirable properties: efficiency, symmetry, dummy, and additivity.
-
-However, the relevance of these properties depends on the setting.
-For instance, 2-efficiency property may be more relevant when features are composed of many sub-features.
-Consider the loan applicant with the features asset and liabilities, which together determine their net worth.
-The 2-efficiency property ensures that the sum of the Shapley values of the sub-features equals the Shapley value of the composite feature.
-If we instead specify the properties, symmetry, dummy, additivity and 2-efficiency, we arrive at Banzhaf values.
-Banzhaf values are more robust than Shapley values and, empirically, have been shown to be more accurately computed.
+While Shapley values are popular, they are not the only game-theoretic quantity that can be used to explain AI predictions.
+Instead of the efficiency property, we may want another application-dependent property.
+For example, in the context of a loan applicant, the 2-efficiency property ensures that the attribution of a composite feature like net worth is the sum of the attributions of the sub-features like assets and liabilities.
+If we replace the efficiency property of Shapley values with the 2-efficiency property, we arrive at the related Banzhaf values.
+Banzhaf values are simpler than Shapley values and have been shown to be more accurately computed in practice.
 I wondered whether I could apply the leverage score sampling technique to Banzhaf values.
-Unlike Shapley values, Banzhaf values were not known to be directly related to a linear regression in general.
-I designed a linear regression problem for which the Banzhaf values are the solution.
-Then I applied the leverage score sampling technique to this linear regression problem to design the Kernel Banzhaf algorithm.
-The resulting algorithm, Kernel Banzhaf, is more efficient and theoretically motivated than the existing Banzhaf value computation methods.
-Further, it offers the same strong non-asymptotic guarantees as Leverage SHAP.
-
-In recent work, I empirically and theoretically improved one of the most popular methods for explaining AI predictions. Shapley values quantify how changing input features affects model output. (The SHAP paper has more than 25,000 citations and the associated codebase has been used in almost 20,000 Github projects.) One of the most popular and efficient model-agnostic methods for computing Shapley values, Kernel SHAP, exploits an elegant mathematical connection to linear regression but in a heuristic way. In recent work, I used a theoretically motivated technique called leverage score sampling to both empirically and theoretically improve Kernel SHAP \cite{musco2024leverage}. The algorithm I proposed, Leverage SHAP, gives better empirical performance than even the highly optimized official implementation and offers theoretical guarantees, contrasting with Kernel SHAP. In follow-up work, I applied the same leverage score sampling technique to a related but more robust game-theoretic approach called Banzhaf values \cite{liu2024kernel}. Together, my work establishes more efficient and theoretically motivated methods for explaining AI predictions.
+While Shapley values are known to be the solution to a linear regression problem, this formulation was only known for Banzhaf values in a restricted setting.
+In order to apply the leverage score sampling technique to Banzhaf values, I designed a linear regression problem for which the Banzhaf values are the solution \cite{liu2024kernel}.
+The resulting algorithm, Kernel Banzhaf, is substantially than the existing Banzhaf value computation methods.
+Further, because of the structure of the Banzhaf linear regression problem, Kernel Banzhaf offers even stronger non-asymptotic guarantees than Leverage SHAP.
 
 { \large \textbf{Future Directions}}
+
+My prior work establishes more efficient and theoretically motivated methods for explaining AI predictions with Shapley and Banzhaf values.
+However, there are still many more game-theoretic quantities that can be used to explain AI predictions in different settings.
+I plan to continue to apply my regression toolkit to design efficient algorithms for computing these game-theoretic quantities, furthering the transparency of AI predictions.
 
 I plan to work with stakeholders to identify settings where AI predictions need to be explained for the trust of users.
 Depending on the setting, there are different desirable properties that give reason to game-theoretic attribution techniques.
@@ -213,6 +213,9 @@ I plan to leverage information already present in the image or text to robustly 
 Randomized algorithms
 
 Hashing and cryptography
+
+While my main research has centered on algorithms for social good, I remain curious about new topics in theoretical computer science and consider myself a generalist. For instance, I have worked on algorithms for efficiently evaluating Boolean functions in both classical \cite{hellerstein2022adaptivity} and quantum settings \cite{czekanski2023robust,kimmel2021query,delorenzo2019applications}. I have even explored board games through an algorithmic and complexity lens \cite{witter2020applications,witter2021backgammon}, which sparked my interest in the field.
+Looking ahead, I hope to continue exploring new theoretical areas at \school.
 
 \begin{center}
 { \large \textbf{Conclusion}}
