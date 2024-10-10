@@ -11,31 +11,34 @@
 
 {\setlength{\parindent}{0cm}
 
-I am a theoretical computer scientist studying algorithms with an eye towards how they can positively impact society.
-As computing becomes ubiquitous, the design and analysis of algorithms for social good is increasingly important.
-My research focuses on the following goals:
+I am a theoretical computer scientist studying algorithms for social good.
+As computing permeates our lives, algorithms wield immense power to drive societal progress. However, this potential is accompanied by risks of unintended consequences. My research aims to bridge the gap between theoretical foundations and practical applications, ensuring that algorithms designed for social good are not only effective but also trustworthy and explainable. To this end, my work focuses on the following interconnected goals:
 \begin{enumerate}
-    \item \textbf{Explainable AI}: I design methods to more accurately interpret opaque models. %For example, a credit card applicant should know why their application was rejected or approved.
-    \item \textbf{Effective Algorithms}: I develop algorithms to solve problems with social impact. %For example, a nonprofit should be able to accurately evaluate the effect of their work.
-    \item \textbf{Responsible Use of AI}: I implement guard rails to prevent the misuse of AI. %For example, AI-generated should be traceable to its source.
+    \item \textbf{Explainable AI}: Developing methods to accurately interpret opaque models. For example, enabling a credit card applicant to understand why their application was approved or rejected.
+    \item \textbf{Responsible Use of AI}: Implementing safeguards to prevent AI misuse, such as ensuring AI-generated content is traceable to its source.
+    \item \textbf{Effective Algorithms}: Creating trustworthy algorithms to address problems with social impact. This includes enabling nonprofits to accurately evaluate the effects of their initiatives.
 \end{enumerate}
 
 The growing importance of algorithms for social good is reflected in the development of recent venues, including the FAccT conference and social impact tracks at major machine learning conferences like AAAI and IJCAI.
 Many algorithms proposed for social good in these venues and others are heuristic in nature. My work aims to illuminate their theoretical foundations, providing A) \textbf{rigorous guarantees on algorithmic performance and behavior}, and B) \textbf{theoretical insights for the design of more effective and trustworthy algorithms}.
 By bridging the gap between theory and practice, I strive to enhance the reliability and impact of algorithms designed for social good.
 
-I have studied algorithms for social good in the context of explainable AI \cite{musco2024leverage,liu2024kernel}, evaluation of nonprofit efficacy \cite{witter2024benchmarking}, fairness in machine learning \cite{rosenblatt2023counterfactual,witter2024fairlyuncertain}, resource allocation \cite{hellerstein2022local,witter2024i,witter2024minimizing}, and societal polarization \cite{musco2022quantify}. I leverage a broad theoretical toolkit including techniques in randomized linear algebra, linear programming, and the theory of boolean functions. Work in my area also requires interdisciplinary engagement with practitioners and stakeholders. To this end, I have worked closely with an early childhood literacy nonprofit and collaborated with researchers across nine institutions, publishing in top machine learning and theoretical computer science venues such as NeurIPS, ESA, and AAAI.
+I have studied algorithms for social good in the context of explainable AI \cite{musco2024leverage,liu2024kernel}, evaluation of nonprofit efficacy \cite{witter2024benchmarking}, fairness in machine learning \cite{rosenblatt2023counterfactual,witter2024fairlyuncertain}, resource allocation \cite{hellerstein2022local,witter2024i,witter2024minimizing}, and societal polarization \cite{musco2022quantify}. I leverage a broad theoretical toolkit including techniques in randomized linear algebra, linear programming, and discrete optimization. Research in my area also requires interdisciplinary engagement with practitioners and stakeholders. To this end, I have worked closely with an early childhood literacy nonprofit and collaborated with researchers across nine institutions, publishing in top machine learning and theoretical computer science venues such as NeurIPS, ESA, and AAAI.
 
-In the remainder of this document, I outline my research plans as they relate to the three overarching goals; describing my related work, future plans, and collaboration opportunities for each goal.
+In the remainder of this document, I outline my research plans as they relate to the three overarching goal.
 
 \begin{center}
-{ \large \textbf{More Accurate Methods for Explainable AI}}
+{ \large \textbf{Provably Accurate Algorithms for Explainable AI}}
 \end{center}
 
-As AI predictions are increasingly incorporated into high-stakes domains like finance, law, and healthcare, users and auditors of AI systems should understand why a prediction was made. For example, a credit card applicant should know why their application was rejected, and a defendant should be aware of how their bail was set. 
-Further, explaining AI predictions can help identify biases and interpret learned concepts, supporting the improvement and refinement of future AI algorithms.
+\textit{Game theory provides a valuable axiomatic framework for explaining AI predictions. While most AI applications of game-theoretic concepts use heuristic methods, I previously developed theoretically grounded algorithms for computing Shapley and Banzhaf values with strong non-asymptotic guarantees, and superior empirical performance. My future research aims to build efficient algorithms for computing other game-theoretic quantities, focusing on applications that promote social good.}
 
-The standard method of explaining AI predictions is to use game-theoretic quantities like Shapley values, quantifying how changes to the input features affect the model output.
+{ \large \textbf{Motivation}}
+
+As AI predictions are increasingly incorporated into high-stakes domains like finance, law, and healthcare, users and auditors of AI systems should understand why a prediction was made. For example, a credit card applicant should know why their application was rejected, and a defendant should be aware of how their bail was set. 
+Further, explaining AI predictions can help identify biases and interpret learned concepts, supporting the improvement and refinement of future algorithms.
+
+The standard method of explaining predictions is to use game-theoretic quantities like Shapley values, quantifying how changes to the input features affect the model output.
 Shapley values are a particularly popular choice because they satisfy four desirable properties: null player, symmetry, additivity, and efficiency.
 However, Shapley values are defined over exponentially terms and are therefore computationally infeasible to compute exactly in general.
 In practice, Shapley values are estimated using heuristics approaches.
@@ -45,189 +48,141 @@ While effective in practice, Kernel SHAP samples heuristically and lacks theoret
 
 { \large \textbf{My Prior Work}}
 
-I developed a theoretically motivated algorithm for estimating Shapley values, Leverage SHAP, that outperforms Kernel SHAP in practice and offers strong non-asymptotic guarantees \cite{musco2024leverage}.
+I developed a theoretically motivated algorithm for estimating Shapley values that outperforms Kernel SHAP in practice and offers strong non-asymptotic guarantees \cite{musco2024leverage}.
 The starting point of my work was an insight from randomized linear algebra: regression problems can be effectively subsampled using statistical leverage scores.
 The benefit of leverage scores is that they quantify the importance of each data point in the regression problem.
-Instead of sampling from the exponentially large linear system via a heuristic weighting as in Kernel SHAP, Leverage SHAP, as its name suggests, samples according to leverage scores.
+Instead of sampling from the exponentially large linear system via a heuristic weighting as in Kernel SHAP, the Leverage SHAP algorithm, as its name suggests, samples according to leverage scores.
 This sampling technique is theoretically motivated and offers strong non-asymptotic guarantees.
-Modifying the standard leverage score analysis to several standard optimizations used for estimating Shapley values, I showed that Leverage SHAP can provably recover accurate Shapley values with almost a linear number of samples.
-Further, not only does leverage score sampling offer theoretical guarantees, but the theoretically motivated Leverage SHAP also outperforms even a highly optimized version of Kernel SHAP in practice.
+Modifying the standard leverage score analysis to the specific optimizations in the algorithm, I showed that Leverage SHAP can provably recover accurate Shapley values with almost a linear number of samples.
+Further, not only does leverage score sampling offer theoretical guarantees, but the theoretically motivated Leverage SHAP also outperforms even a highly optimized version of Kernel SHAP empirically.
 
 While Shapley values are popular, they are not the only game-theoretic quantity that can be used to explain AI predictions.
 Instead of the efficiency property, we may want another application-dependent property.
 For example, in the context of a loan applicant, the 2-efficiency property ensures that the attribution of a composite feature like net worth is the sum of the attributions of the sub-features like assets and liabilities.
 If we replace the efficiency property of Shapley values with the 2-efficiency property, we arrive at the related Banzhaf values.
-Banzhaf values are simpler than Shapley values and have been shown to be more accurately computed in practice.
+Banzhaf values are simpler than Shapley values and have been found to be more accurately computed in practice.
 I wondered whether I could apply the leverage score sampling technique to Banzhaf values.
 While Shapley values are known to be the solution to a linear regression problem, this formulation was only known for Banzhaf values in a restricted setting.
-In order to apply the leverage score sampling technique to Banzhaf values, I designed a linear regression problem for which the Banzhaf values are the solution \cite{liu2024kernel}.
-The resulting algorithm, Kernel Banzhaf, is substantially than the existing Banzhaf value computation methods.
+So, in order to apply the leverage score sampling technique to Banzhaf values, I designed a linear regression problem for which the Banzhaf values are the solution \cite{liu2024kernel}.
+The resulting algorithm, Kernel Banzhaf, substantially outperforms the existing Banzhaf value computation methods.
 Further, because of the structure of the Banzhaf linear regression problem, Kernel Banzhaf offers even stronger non-asymptotic guarantees than Leverage SHAP.
 
 { \large \textbf{Future Directions}}
 
 My prior work establishes more efficient and theoretically motivated methods for explaining AI predictions with Shapley and Banzhaf values.
 However, there are still many more game-theoretic quantities which are relevant in different social good applications.
-I plan to continue to apply my theoretical regression toolkit to design efficient algorithms for computing these game-theoretic quantities, furthering the transparency of AI predictions.
+I plan to apply my theoretical toolkit to design efficient algorithms for computing these game-theoretic quantities, furthering the transparency of AI predictions.
 
-One under-studied social good setting is graph data, where graph neural networks are used to make predictions.
-Social good applications of graph data include predicting the spread of disease or identifying collusion rings.
-By design, graph neural networks process the features of adjacent nodes to identify local patterns in graph data.
-Because of the high stakes of these applications, it is important to explain why the graph neural network made a prediction.
+One under-studied social good setting is graph tasks, such as predicting the spread of disease or identifying collusion rings.
+Graph neural networks have emerged as a powerful tool for learning on graph data, processing the features of adjacent nodes to identify local patterns.
+Because of the high stakes of social good applications, it is important to explain how graph neural networks make predictions.
 Unfortunately, standard game-theoretic attribution quantities like Shapley and Banzhaf values do not take into account the graph structure, and so lose the ability to explain how the graph neural network reasons.
-An alternative game-theoretic quantity designed specifically for graph structures is the Hamiache-Navarro (HN) value.
-The HN value naturally generalizes Shapley values, and can even be derived from a simpler set of properties.
+An alternative game-theoretic quantity designed specifically for graph structures is the Hamiache-Navarro (HN) value, which naturally generalizes Shapley values to graph settings.
 Mathematically, the HN value is the limit of a series of associated games, which can be represented as repeated matrix multiplication.
-This connection to matrix multiplication suggests that the HN value can be computed via a gradient descent algorithm.
+This connection to matrix multiplication suggests that the HN value may be computed via a gradient descent algorithm.
 I plan to investigate the structure of the HN value to recover the underlying problem that gives rise to the gradient descent algorithm.
 If the problem is a linear regression problem as I suspect, I can apply leverage score sampling to design provably accurate algorithms for computing the HN value.
 
-Broadly, there is a rich game theory literature to describe attribution techniques from an axiomatic perspective in many settings relevant to social good applications.
-As trustworthy AI becomes increasingly important, the game theory literature is a powerful resource for explaining AI predictions in an axiomatic way.
-But game theorists are interested in describing the properties of these quantities, rather than efficiently computing them.
-The vast majority of prior work develops heuristic algorithms for computing these quantities.
-However, as evidenced by my work on Shapley and Banzhaf values, principled algorithms can exploit theoretically motivated insights to outperform heuristic methods, while simultaneously offering strong non-asymptotic guarantees.
-I plan to apply my regression toolkit to design provably efficient algorithms for computing game-theoretic quantities relevant to social good applications. 
+There is a rich game theory literature to describe attribution techniques from an axiomatic perspective.
+As trustworthy AI becomes increasingly important, this literature is a powerful resource for explaining AI predictions in an axiomatic way.
+But game theorists are interested in formulating these quantities, rather than computing them efficiently.
+The majority of prior work that adapts these quantities to AI applications develops heuristic algorithms.
+However, as evidenced by my work on Shapley and Banzhaf values, theoretically motivated algorithms can outperform heuristic methods, while simultaneously offering strong non-asymptotic guarantees.
+I plan to apply my theoretical toolkit to design provably efficient algorithms for computing game-theoretic quantities relevant to social good applications. 
 
-{ \large \textbf{Collaboration Opportunities at \school}}
+{ \large \textbf{Collaboration Opportunities}}
 
 The problems in explainable AI present a rich landscape of research opportunities, spanning game theory, graph algorithms, and randomized linear algebra.
 I am excited to collaborate with other theoretical computer scientists at \school, building theoretically motivated algorithms with provable performance guarantees.
 
 \begin{center}
-    { \large \textbf{Trustworthy Treatment Effect Estimation}}    
+{ \large \textbf{Distortion-free Watermarking for the Responsible Use of AI}}
 \end{center}
 
-In broader societal applications, such as government spending or nonprofit resource allocation, explainability becomes even more critical. It’s not enough to explain individual predictions; stakeholders should have confidence in the entire model’s transparency and reasoning. 
+\textit{I previously developed distortion-free watermarking techniques to ensure the responsible use of AI-generated images, but with storage that scales with use. By using cryptographic hash functions and locality-sensitive hashing, I plan to design secure and robust watermarks that can be detected without degrading content quality or requiring costly storage. My approach applies to both text and vision tasks, allowing for efficient watermarking that leverages existing information in the generated content, ensuring scalability, security, and robustness.}
 
-Treatment effect estimation is important problem.
-Often randomized control trials allow us to estimate the effect of a treatment.
-However, not always possible: some people may need the treatment more than others, or simply, the treatment has already been assigned and we can only observe the outcome.
-This setting is called natural experiments and is common in social good applications.
-One application is evaluating the impact of a nonprofit program.
-RORCO is an early childhood literacy nonprofit that provides books to children at their pediatrician visits.
-Collaborate with them to design estimator, try many complicated methods but no guarantee and each have different results.
+{ \large \textbf{Motivation}}
 
-%For example, an early childhood literacy nonprofit benefits from a transparent, simple model to evaluate the impact of their program, allowing them to trust the analysis and use it to guide future decisions.
-%A key tenant of explainable AI is algorithmic simplicity, which ensures models are both interpretable and reliable.
+As AI models become more advanced, powerful tools like Large Language Models (LLMs) for text generation and diffusion models for prompt-guided image generation are now ubiquitous. While these technologies offer vast applications, they also bring new risks, such as malicious actors claiming AI-generated text as their own or fabricating realistic images of fake events, potentially causing confusion or harm. To mitigate these risks, model owners use watermarking techniques to track the content generated by their models.
+
+However, most current watermarking methods are distortion-based, meaning they modify the output to embed identifiable markers. For text, the distribution of words is often altered while, for images, the distribution of an associated latent image is often modified. Despite their widespread use, distortion-based watermarks remain vulnerable: they can be detected and even forged by malicious actors if enough examples are available.
 
 { \large \textbf{My Related Work}}
 
-Starting point is practical testbed for treatment effect estimation.
-Curated dataset and built benchmark for evaluating treatment effect estimators.
-From this empirical investigation, found that doubly robust algorithms give the best performance.
-However, in the literature, quite uninterpretable and guarantees are asymptotic.
-Designed a simple algorithm that is theoretically motivated and analyze its variance in the asymptotic setting, exactly.
-Find the performance is comparable to the doubly robust algorithms but with a simpler estimator.
-RORCO already used this algorithm to inform future program development.
+I am interested in distortion-free watermarking techniques that generate content without modifying it. In this approach, verification of the watermark requires access to a private, correlated variable, ensuring the watermark's security and robustness against forgery. However, a significant limitation of current distortion-free methods is the need for the model owner to store the correlated variable, which can be both costly and inefficient.
 
-In collaboration with the early childhood literacy nonprofit Reach Out and Read Colorado (RORCO), I have applied this principle to the challenge of treatment effect estimation. While treatment effect estimation is well-studied, existing algorithms are often complex and yield inconsistent estimates. To address this, I developed a benchmark for evaluating treatment effect estimators and proposed a theoretically-motivated, simple method \cite{witter2024benchmarking}. By leveraging regression tools related to my work on Shapley and Banzhaf values, I introduced a simple yet accurate algorithm that RORCO has already used to inform future program development.
+In my work, I developed a distortion-free watermarking method for diffusion models \cite{arabi2024hidden}. The key idea is to generate initial noise using a finite set of seeds, where each seed is linked to a cryptographic hash function. Even if an adversary can reconstruct the noise, it remains indistinguishable from random noise and provides no information about other seeds. The main challenge lies in efficiently storing and searching through all possible noise configurations.
 
 { \large \textbf{Future Directions}}
 
-I am interested in designing user-friendly algorithms with understandable theoretical guarantees.
-Would like statement like with this many samples, can guarantee this level of accuracy.
-Further, simplified method can be used by stakeholders to understand the impact of their program.
-Many estimators stated in asymptotic sense without strong guarantees.
-Encourage development of effective and simple estimators.
-In framework, I'm interested in new estimators that draw on regression connection.
+My goal is to develop distortion-free watermarks that scale without the need for costly storage.
+The key idea is to leverage context to robustly and securely generate a seed using locality-sensitive hashing (LSH), specifically SimHash.
+This would allow us to generate a correlated random variable from the seed in a secure manner, without distorting the distribution of the generated content.
 
-While my work uses existing data to approximate the impact of a program, the quality of the predictions is inherently limited by the confounded nature of the data. In future work, I plan to extend my treatment effect estimation work to the active regression setting, where individuals are selected to either receive the ‘treatment’ or ‘control’. 
-I will apply theoretical tools to design efficient estimators that can achieve the same level of accuracy as prior work but with fewer selected individuals, limiting the negative impact to individuals that are excluded from the nonprofit’s treatment.
+In the LLM setting, text is generated in an auto-regressive manner by predicting the next token based on the previous context. Current watermarking approaches modify this distribution, either globally or contextually, making the watermarks detectable, removable, and sometimes degrading text quality. I plan to use SimHash to convert the embedding of the prompt into seeds and then generate a random variable using cryptographic hash functions.  This random variable is reproducible if we have access to the seed, and distributed identically to a sample from the true probability distribution over next tokens. To detect the watermark, we compute the correlated random variable for each seed and check its alignment with the generated text. By using SimHash, we can guarantee that nearby embedded contexts produce the same seed with high probability, making the watermark detectable without degrading text quality.
+
+For vision tasks, a similar approach can be applied by embedding the prompt and using SimHash to derive multiple seeds. Each seed generates randomness for different portions of the image. During detection, we caption the image to obtain a vector aligning with the original prompt, apply SimHash to retrieve seeds, and check for alignment with the latent noise. This method allows for flexible tuning of hyperparameters to achieve the desired level of detection accuracy, while the cryptographic hash function ensures security.
+
+By combining distortion-free and searchable watermarking with streaming and randomized algorithms, this approach promises both scalability and efficiency. I plan to leverage information already present in the image or text to robustly and securely store the correlated variable in the generated content, enabling efficient distortion-free watermarking and ultimately supporting the responsible use of AI.
 
 { \large \textbf{Collaboration Opportunities}}
-Statistical estimator design
 
-Causal inference
+The problems in watermarking present fascinating algorithmic questions.
+I am excited to collaborate with researchers at \school, leveraging expertise in cryptography, randomized algorithms, and hashing to develop distortion-free watermarking techniques that are both secure and scalable.
 
 \begin{center}
-{ \large \textbf{Distortion-free Watermarking for Responsible Use of AI}}
+    { \large \textbf{Simple and Trustworthy Algorithms for Treatment Effect Estimation}}    
 \end{center}
 
-Powerful tools enable humanlike text and realistic images
+\textit{I previously designed simple and trustworthy algorithms for treatment effect estimation, motivated by the need for transparent and reliable evaluations of social programs. My work addresses challenges in natural experiment settings by developing interpretable, theoretically grounded algorithms that offer non-asymptotic guarantees, as demonstrated in collaboration with a nonprofit organization. I aim to extend this research into active regression settings to design efficient estimators with minimal negative impact.}
 
-While companies work to add guard rails, malicious actors can still use technology in any number of ways. For example, a malicious actor could claim that AI-generated text is their own or use AI models to generate images of fake events, causing confusion or even harm.
-Current approach is to watermark images and text so that content can be identified.
-However, most watermarking techniques are distortion-based, meaning they modify the output to embed the watermark which, in turn, can be detected and forged.
-For example, use red/green list of words to modify distribution of words in text so that with enough examples, the modified distribution can be recovered.
-For images, use Fourier patterns in images or in the latent noise of the image to embed the watermark.
-Again, detectable and forgeable with enough images.
+{ \large \textbf{Motivation}}
 
-As data processing and computing techniques quickly advance, AI models are increasingly prevalent.
-Large Language Models (LLMs) have become ubiquitous for text generation and AI models can generate realistic images from text prompts.
-While their applications are vast, these new capabilities also introduce new challenges:
-Malicious actors may claim that AI generated text is their own or, worse, use AI models to generate images of fake events, causing confusion or even harm.
-Currently, model owners like OpenAI or Google use watermarking techniques to track the source of generated content.
-However, the current watermarking techniques are distortion-based, meaning they modify the output to embed the watermark which, in turn, can be detected and forged.
+In broader societal applications, such as government spending or nonprofit resource allocation, explainability becomes even more critical. It's not enough to explain individual predictions; stakeholders should have confidence in the entire model's transparency and reasoning. This need for transparency extends to the realm of treatment effect estimation, an important problem in evaluating the impact of social programs. While randomized control trials often allow us to estimate the effect of a treatment, they're not always possible or ethical to implement. In some cases, certain individuals may have a greater need for the treatment, or the treatment may have already been assigned, leaving us only to observe the outcome. These scenarios, known as natural experiments, are common in social good applications and require sophisticated analytical approaches because the treatment assignment can be confounded by other factors.
+
+One such application is evaluating the impact of nonprofit programs. For instance, Reach Out and Read Colorado (RORCO), an early childhood literacy nonprofit, provides books to children during their pediatrician visits. RORCO has been operating for more than 20 years, distributing books to the least-served students in Colorado. Because of their extensive history, RORCO has a wealth of data on the children they have served and the impact of their program but lacks a robust method for their natural experiment setting. In collaborating with RORCO, I applied more than 20 existing treatment effect estimation methods. However, each method yielded different results on their data and non offered theoretical guarantees.
 
 { \large \textbf{My Related Work}}
 
-Designed distortion-free method for watermarking diffusion methods.
-The idea is to use a finite set of seeds for creating initial noise.
-Even if adversary can reconstruct the noise, the noise looks random and it gives no information about any of the other seeds because of the use of a cryptographic hash function.
-The challenge is storing all of the different possible noises and searching over them.
-
-I am interested in distortion-free watermarking techniques where the content is generated without modification.
-In this setting, it is only possible to verify the watermark with access to a private correlated variable \cite{arabi2024hidden}; hence, the watermark is secure and robust to forgery.
-The downside of current distortion-free methods is that the correlated variable must somehow be stored by the model owner, which can be costly and inefficient.
+Building on the challenges identified in evaluating nonprofit programs like RORCO's, I embarked on developing a practical testbed for treatment effect estimation. This work was motivated by the need for robust, interpretable methods that can provide reliable insights in natural experiment settings.
+To address this gap, I curated a comprehensive dataset and constructed a benchmark for evaluating treatment effect estimators. This empirical investigation yielded valuable insights, notably that doubly robust algorithms generally provide the best performance in estimating treatment effects. However, these algorithms often suffer from two significant drawbacks: they tend to be quite uninterpretable, and their theoretical guarantees are primarily asymptotic, limiting their practical applicability in finite sample scenarios.
+Leveraging these findings, I designed a simple, theoretically motivated algorithm and exactly analyzed its variance in the non-asymptotic setting. This new approach not only offers performance comparable to the more complex doubly robust algorithms but does so with a simpler, more interpretable estimator. The algorithm's effectiveness is not just theoretical; RORCO has already implemented it to inform their future program development, demonstrating its practical value.
 
 { \large \textbf{Future Directions}}
 
-Goal is to generate distortion-free method without the storage that scales.
-The idea is to use the context to get a seed in a robust and secure way.
-The technical ingredient is locality sensitive hashing.
+While treatment effect estimation is well-studied, there are practically no algorithms with non-asymptotic user-friendly guarantees.
+My goal is to develop simple algorithms with understandable theoretical guarantees for treatment effect estimation.
+Like the guarantees I developed for Shapley and Banzhaf estimators, the guarantees would be of the form: with $\textnormal{poly}(m, 1/\epsilon, 1/\delta)$ samples, we can guarantee $\epsilon$-approximate estimates with probability $1-\delta$.
+This approach not only enhances the reliability of the estimates but also allows stakeholders to easily comprehend the impact of their programs.
 
-LLM setting: Text is generated in an auto-regressive way by repeatedly generating a distribution over the next word.
-Prior work modifies the distribution, either in a global way or in a way that depends on the context.
-Either way, this is detectable with enough samples and therefore removable and forgeable. Not to mention the quality of the text is degraded.
-I plan to use an algorithm like SimHash to turn an embedding of the prompt into seeds.
-Then use a randomly selected seed with a cryptographic hash function to generate a random variable that is correlated with the noise.
-To detect the watermark, take each context and generate the correlated random variable for each seed and check for alignment with the observed text.
-By guarantees of SimHash, the seed is the same for nearby embedded contexts with high probability so the watermark can be detected with high probability.
-Can describe this process theoretically, and exploits streaming algorithms for distortion-free watermarking.
+A further avenue of research is to develop new estimators for the active regression setting that draw on the connection between regression and treatment effect estimation.
+While natural experiment methods utilize existing data to approximate program impact, the quality of estimates is inherently limited by the confounded nature of observational data. To address this limitation, I plan to extend my treatment effect estimation work to the active regression setting. In this context, individuals are actively selected to receive either the 'treatment' or 'control' condition.
+I plan to apply theoretical tools to design efficient estimators that can achieve the same level of accuracy as prior work but with fewer selected individuals, limiting the negative impact to individuals that are excluded from the nonprofit’s treatment.
 
-Vision setting: Similarly, store the information in the output.
-In this case, use prompt to embed and then SimHash to get many seeds, each seed is used to create the randomness in a different portion of the image.
-At detection time, we can caption the image to get a vector that aligns with the original prompt and then apply SimHash to get seeds.
-If any of the noise generated by the seed aligns with the reconstructed latent noise, conclude watermark.
-Again we have probability that depends on closeness of vector embedding and can vary hyperparameters to get desired level of detection.
-Also secure because the seeds are passed through a cryptographic hash function.
+{ \large \textbf{Collaboration Opportunities}}
 
-Dual combination of distortion-free and searchable.
-Streaming and randomized algorithms for speed up!
-
-I plan to leverage information already present in the image or text to robustly and securely store the correlated variable in the generated content, enabling efficient distortion-free watermarking and ultimately supporting the responsible use of AI.
-
-{ \large \textbf{Collaboration Opportunities at ETH Zurich}}
-
-Randomized algorithms
-
-Hashing and cryptography
-
-While my main research has centered on algorithms for social good, I remain curious about new topics in theoretical computer science and consider myself a generalist. For instance, I have worked on algorithms for efficiently evaluating Boolean functions in both classical \cite{hellerstein2022adaptivity} and quantum settings \cite{czekanski2023robust,kimmel2021query,delorenzo2019applications}. I have even explored board games through an algorithmic and complexity lens \cite{witter2020applications,witter2021backgammon}, which sparked my interest in the field.
-Looking ahead, I hope to continue exploring new theoretical areas at \school.
+The problems in treatment effect estimation pose many interesting statistical questions across estimator design, causal inference, and algorithmic analysis. I am excited to collaborate with researchers at \school, leveraging their expertise to develop simple and provably accurate algorithms for treatment effect estimation.
 
 \begin{center}
 { \large \textbf{Conclusion}}
 \end{center}
 
-Algorithms are all around us, making our lives better but sometimes introducing biases and harm. My work seeks to improve transparency, explaining the way these models work , designing simple yet effective algorithms that can be trusted by stakeholders, and adding guard rails against the misuse of AI. I leverage both mathematical tools and algorithmic insights to solve impactful problems, iteratively identifying and solving problems with stakeholder input. I am particularly excited to further incorporate students in my research, carving out impactful problems that strengthen the skills of student researchers and encourage learning.
+While my main research has centered on algorithms for social good, I remain curious about new topics in theoretical computer science and consider myself a generalist. For instance, I have worked on algorithms for efficiently evaluating Boolean functions in both classical \cite{hellerstein2022adaptivity} and quantum settings \cite{czekanski2023robust,kimmel2021query,delorenzo2019applications}. I have even explored board games through an algorithmic and complexity lens \cite{witter2020applications,witter2021backgammon}, which sparked my interest in the field. Looking ahead, I hope to continue exploring new areas beyond my current interests at \school.
 
-}
+The growing integration of AI and algorithmic decision-making into socially significant domains demands that we develop both effective and trustworthy methods. My research bridges the gap between theoretical computer science and practical, socially relevant applications, ensuring that algorithms for social good are not only efficient but also explainable, secure, and interpretable. Through my work on explainable AI, responsible AI usage via watermarking, and treatment effect estimation, I aim to address some of the most pressing challenges posed by modern algorithmic systems.
 
-\newpage
-
-\begingroup
+By focusing on provably accurate algorithms, secure watermarking techniques, and transparent evaluation methods, my goal is to contribute to the development of more robust, ethical, and impactful technologies. I look forward to collaborating with fellow researchers at \school~to further the reach of these ideas and broadly benefit society.
 
 \begin{center}{\large \textbf{References}}\end{center}
 
-\textit{*As is the custom in theoretical computer science, authors are listed in alphabetical order unless otherwise specified with an asterisk.}
+\textit{An asterisk (*) indicates that authors are listed in alphabetical order.}
+
+}
 \bibliographystyle{alpha}
 \renewcommand
 \refname{}
 \vspace{-3em}
 \bibliography{../references}
-\endgroup
 
 
 \end{document}
