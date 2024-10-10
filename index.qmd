@@ -97,7 +97,7 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
 
 ---
 
-*Note: As is the tradition in theoretical computer science, authors are ordered alphabetically by last name unless otherwise noted with an asterisk.*
+*As is the tradition in theoretical computer science, authors marked with an asterisk (\*) are listed in alphabetical order.*
 
 <!--
 <div class="item">
@@ -126,7 +126,7 @@ Preprint
 
 **[Provably Accurate Shapley Value Estimation via Leverage Score Sampling](https://arxiv.org/abs/2410.01917)**
 
-**Christopher Musco, R. Teal Witter**
+**Christopher Musco\*, R. Teal Witter\***
 
 Preprint
 
@@ -136,7 +136,7 @@ Preprint
 
 **[FairlyUncertain: A Comprehensive Benchmark of Uncertainty in Algorithmic Fairness](https://arxiv.org/abs/https://arxiv.org/abs/2410.02005)**
 
-**Lucas Rosenblatt, R. Teal Witter**
+**Lucas Rosenblatt\*, R. Teal Witter\***
 
 Preprint
 
@@ -145,7 +145,7 @@ Preprint
 
 <div class="item">
 
-**[Benchmarking Estimators for Natural Experiments: A Novel Dataset and a Doubly Robust Algorithm](https://arxiv.org/abs/2409.04500)\***
+**[Benchmarking Estimators for Natural Experiments: A Novel Dataset and a Doubly Robust Algorithm](https://arxiv.org/abs/2409.04500)**
 
 **R. Teal Witter, Christopher Musco**
 
@@ -155,7 +155,7 @@ Conference on Neural Information Processing Systems (NeurIPS 2024)
 
 <div class="item">
 
-**[Minimizing Cost Rather Than Maximizing Reward in Restless Multi-Armed Bandits](https://arxiv.org/abs/2409.03071)\***
+**[Minimizing Cost Rather Than Maximizing Reward in Restless Multi-Armed Bandits](https://arxiv.org/abs/2409.03071)**
 
 **R. Teal Witter, Lisa Hellerstein**
 
@@ -165,7 +165,7 @@ Preprint
 
 <div class="item">
 
-**[I Open at the Close: A Deep Reinforcement Learning Evaluation of Open Streets Initiatives](https://arxiv.org/abs/2312.07680)\***
+**[I Open at the Close: A Deep Reinforcement Learning Evaluation of Open Streets Initiatives](https://arxiv.org/abs/2312.07680)**
 
 **R. Teal Witter, Lucas Rosenblatt**
 
@@ -177,7 +177,7 @@ AAAI Conference on Artificial Intelligence (AAAI 2024)
 
 **[Robust and Space-Efficient Dual Adversary Quantum Query Algorithms](https://arxiv.org/abs/2306.15040)**
 
-**Michael Czekanski, Shelby Kimmel, R. Teal Witter**
+**Michael Czekanski\*, Shelby Kimmel\*, R. Teal Witter\***
 
 European Symposium on Algorithms (ESA 2023)
 
@@ -197,7 +197,7 @@ AAAI Conference on Artificial Intelligence (AAAI 2023)
 
 **[A Local Search Algorithm for the Min-Sum Submodular Cover Problem](https://arxiv.org/abs/2209.03054)**
 
-**Lisa Hellerstein, Thomas Lidbetter, R. Teal Witter**
+**Lisa Hellerstein\*, Thomas Lidbetter\*, R. Teal Witter\***
 
 International Symposium on Algorithms and Computation (ISAAC 2022)
 
@@ -207,7 +207,7 @@ International Symposium on Algorithms and Computation (ISAAC 2022)
 
 **[Adaptivity Gaps for the Stochastic Boolean Function Evaluation Problem](https://arxiv.org/abs/2208.03810)**
 
-**Lisa Hellerstein, Devorah Kletenik, Naifeng Liu, R. Teal Witter**
+**Lisa Hellerstein\*, Devorah Kletenik\*, Naifeng Liu\*, R. Teal Witter\***
 
 Workshop on Approximation and Online Algorithms (WAOA 2022)
 
@@ -217,7 +217,7 @@ Workshop on Approximation and Online Algorithms (WAOA 2022)
 
 **[How to Quantify Polarization in Models of Opinion Dynamics](https://arxiv.org/abs/2110.11981)**
 
-**Christopher Musco, Indu Ramesh, Johan Ugander, R. Teal Witter**
+**Christopher Musco\*, Indu Ramesh\*, Johan Ugander\*, R. Teal Witter\***
 
 International Workshop on Mining and Learning with Graphs (MLG 2022)
 
@@ -237,7 +237,7 @@ International Conference on Combinatorial Optimization and Applications (COCOA 2
 
 **[A Query-Efficient Quantum Algorithm for Maximum Matching on General Graphs](https://arxiv.org/abs/2010.02324)**
 
-**Shelby Kimmel, R. Teal Witter**
+**Shelby Kimmel\*, R. Teal Witter\***
 
 Algorithms and Data Structures Symposium (WADS 2021)
 
@@ -257,7 +257,7 @@ International Conference on the Foundations of Digital Games (FDG 2020)
 
 **[Applications of the Quantum Algorithm for st-Connectivity](https://arxiv.org/abs/1904.05995)**
 
-**Kai DeLorenzo, Shelby Kimmel, R. Teal Witter**
+**Kai DeLorenzo\*, Shelby Kimmel\*, R. Teal Witter\***
 
 Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC 2019)
 
