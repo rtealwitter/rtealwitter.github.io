@@ -97,18 +97,19 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
 
 ---
 
-*As is the tradition in theoretical computer science, authors marked with an asterisk (\*) are listed in alphabetical order.*
+*An asterisk (\*) indicates that authors are listed in alphabetical order (keeping with the tradition of theoretical computer science).*
 
-<!--
 <div class="item">
   
-**Kernel Banzhaf: A fast and Robust Estimator for Banzhaf Values\***
+**[Kernel Banzhaf: A Fast and Robust Estimator for Banzhaf Values](https://arxiv.org/abs/2410.08336)**
 
-**Yurong Liu, R. Teal Witter, Flip Korn, Tarfah Alrashed, Dimitris Paparas, Julian Friere**
+**Yurong Liu\*, R. Teal Witter\*, Flip Korn, Tarfah Alrashed, Dimitris Paparas, Julian Friere**
 
 Preprint
 
 </div>
+
+<!--
 
 <div class="item">
   
