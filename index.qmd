@@ -103,7 +103,7 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
   
 **[Kernel Banzhaf: A Fast and Robust Estimator for Banzhaf Values](https://arxiv.org/abs/2410.08336)**
 
-**Yurong Liu\*, R. Teal Witter\*, Flip Korn, Tarfah Alrashed, Dimitris Paparas, Julian Friere**
+**Yurong Liu\*, R. Teal Witter\*, Flip Korn, Tarfah Alrashed, Dimitris Paparas, Juliana Freire**
 
 Preprint
 
