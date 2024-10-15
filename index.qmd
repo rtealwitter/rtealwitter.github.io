@@ -97,7 +97,7 @@ and applied math to board games with [Alex Lyford](https://www.middlebury.edu/ac
 
 ---
 
-*An asterisk (\*) indicates that authors are listed in alphabetical order (keeping with the tradition of theoretical computer science).*
+*In the tradition of theoretical computer science, an asterisk (\*) indicates that authors are listed in alphabetical order.*
 
 <div class="item">
   
