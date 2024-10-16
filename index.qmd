@@ -135,7 +135,7 @@ Preprint
 
 <div class="item">
 
-**[FairlyUncertain: A Comprehensive Benchmark of Uncertainty in Algorithmic Fairness](https://arxiv.org/abs/https://arxiv.org/abs/2410.02005)**
+**[FairlyUncertain: A Comprehensive Benchmark of Uncertainty in Algorithmic Fairness](https://arxiv.org/abs/2410.02005)**
 
 **Lucas Rosenblatt\*, R. Teal Witter\***
 
