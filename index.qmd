@@ -17,7 +17,7 @@ ___
 
 <div class="header-text">
 I am a PhD candidate at NYU Tandon where I am fortunate to be advised 
-by [Lisa Hellerstein](https://cse.engineering.nyu.edu/~hstein/) and [Chris Musco](https://www.chrismusco.com/). 
+by [Chris Musco](https://www.chrismusco.com/) and [Lisa Hellerstein](https://cse.engineering.nyu.edu/~hstein/).
 My work is generously supported by an NSF Graduate Research Fellowship.
 
 I design and analyze algorithms, leveraging ideas from theoretical computer science and machine learning.
