@@ -10,9 +10,19 @@
 \begin{document}
 
 {\setlength{\parindent}{0cm}
-I am a theoretical computer scientist studying algorithms with an eye towards how they can positively impact society. As computing becomes ubiquitous, the design and analysis of algorithms for social good is increasingly important. We want to ensure that algorithms are applied in useful ways (e.g., improving healthcare, education, and transportation) while simultaneously ensuring that algorithms are unbiased (e.g., decisions in hiring, credit loans, and criminal justice are fair and transparent). The growing importance of this area is reflected in the development of recent venues, including the FAccT conference and social impact tracks at major machine learning conferences like AAAI and IJCAI.
+I am a theoretical computer scientist who studies algorithms for social good.
+The rapid integration of computing into society has led to algorithms shaping crucial decisions in areas like healthcare, education, and criminal justice. While these algorithmic solutions promise unprecedented societal advancements, they also carry the risk of amplifying biases and creating unintended negative impacts on vulnerable populations. My research focuses on algorithms for social good that are not only effective but also trustworthy and explainable.
+To this end, my work focuses on the following interconnected goals:
+\begin{enumerate}
+    \item \textbf{Explainable AI}: Developing rigorous mathematical frameworks to interpret complex models, enabling users to understand the rationale behind algorithmic decisions.
+    \item \textbf{Dynamic Decision Making}: Designing algorithms that adapt to changing environments, ensuring robust performance in dynamic systems like urban planning and wildlife conservation.
+    \item \textbf{Responsible Use of AI}: Formulating safeguards to prevent AI misuse and ensure accountability. This includes watermarking AI-generated content to ensure authenticity and traceability.
+\end{enumerate}
 
-I have studied algorithms for social good in the context of explainable AI, evaluation of nonprofit efficacy, fairness in machine learning, resource allocation, and societal polarization. I leverage a broad theoretical toolkit including techniques in randomized linear algebra, linear programming, and the theory of boolean functions. But work in my area also requires deep interdisciplinary engagement with practitioners and stakeholders. To this end, I have worked closely with an early childhood literacy nonprofit and collaborated with researchers across nine institutions, publishing in top venues like NeurIPS, AAAI, and ESA.
+Many algorithms proposed for social good are heuristic in nature. My work aims to illuminate their theoretical foundations, providing (A) \textbf{rigorous guarantees on algorithmic performance and behavior}, and (B) \textbf{theoretical insights for the design of more effective and trustworthy algorithms}.
+By bridging the gap between theory and practice, I enhance the reliability and impact of algorithms designed for social good.
+
+I have studied algorithms for social good in the context of explainable AI \cite{musco2024leverage,liu2024kernel}, evaluation of nonprofit efficacy \cite{witter2024benchmarking}, fairness in machine learning \cite{rosenblatt2023counterfactual,witter2024fairlyuncertain}, resource allocation \cite{hellerstein2022local,witter2024i,witter2024minimizing}, and societal polarization \cite{musco2022quantify}. I leverage a broad theoretical toolkit including techniques in randomized linear algebra, linear programming, and discrete optimization. Research in my area also requires interdisciplinary engagement stakeholders. To this end, I have worked closely with an early childhood literacy nonprofit and collaborated with researchers across nine institutions, publishing in top machine learning and theoretical computer science venues such as NeurIPS, ESA, and AAAI.
 
 \begin{center}
 {\large \textbf{Algorithms for Explainable AI}}
@@ -48,29 +58,49 @@ Sometimes our goal is not to develop an algorithm, but to use algorithmic tools 
 While my main research has centered on algorithms for social good, I remain curious about new topics in theoretical computer science and consider myself a generalist. For instance, I have worked on algorithms for efficiently evaluating Boolean functions in both classical \cite{hellerstein2022adaptivity} and quantum settings \cite{czekanski2023robust,kimmel2021query,delorenzo2019applications}. Looking ahead, I hope to continue exploring these and other areas at \school, since the topics offer excellent opportunities for undergraduate research. My own journey into computer science research began with strategies for the board game Ticket-to-Ride \cite{witter2020applications} and the computational complexity of Backgammon \cite{witter2021backgammon}, illustrating how accessible topics can spark interest in the field.
 
 By design, my research agenda is multi-faceted, combining theoretical analysis and motivation of algorithms with a focus on practical efficiency and real-world impact. This approach enables students to carve out projects that align with their interests and strengths. Students with a strong mathematical background can leverage creative ideas to design novel algorithms, refining them for theoretical analysis. Students with strong computational skills can focus on efficiently implementing algorithms, identifying and addressing practical concerns.
-
 I have advised four undergraduate and high school students on research projects, and I'm excited to continue involving students in my future work across the following research agenda.
 
 {\large \textbf{Explainable AI Estimators Beyond Shapley and Banzhaf Values}}
 
-Interpreting predictions is key to building transparency and trust in AI systems. In recent work, I designed theoretically-motivated algorithms for estimating game-theoretic explanations of AI predictions, specifically Shapley and Banzhaf values. To enhance these methods, I applied leverage score sampling, exploiting elegant connections between the respective quantities and linear regression problems. There are many game-theoretic quantities beyond Shapley and Banzhaf values that each satisfy different properties that may be particularly relevant to different explainable AI tasks. I plan to identify quantities relevant to different explainable AI tasks and search for connections to linear regression, ideally employing leverage score sampling to the special structure of the problem and yielding efficient algorithms.
+My prior work establishes more efficient and theoretically motivated methods for explaining AI predictions with Shapley and Banzhaf values.
+Building on this foundation, I plan to explore a broader spectrum of game-theoretic concepts applicable to various social good domains. My goal is to leverage my theoretical expertise to design novel, computationally efficient algorithms for these game-theoretic quantities, thereby enhancing the interpretability and transparency of AI systems across diverse applications.
 
-{\large \textbf{Active Sampling for Treatment Effect Estimation}}
+One under-studied social good setting is graph learning tasks, such as predicting the spread of disease or identifying collusion rings.
+Graph neural networks have emerged as a powerful tool for learning on graph data, processing the features of adjacent nodes to identify local patterns.
+Because of the high stakes of social good applications, it is important to explain how graph neural networks make predictions.
+Unfortunately, standard game-theoretic attribution quantities like Shapley and Banzhaf values do not take into account the graph structure, and so lose the ability to explain how the graph neural network reasons.
+An alternative game-theoretic quantity designed specifically for graph structures is the Hamiache-Navarro (HN) value, which naturally generalizes Shapley values to graph settings.
+Mathematically, the HN value is the limit of a series of associated games, which can be represented as repeated matrix multiplication.
+This connection suggests the HN value may be computable via gradient descent.
+I plan to investigate the structure of the HN value to recover the underlying problem that gives rise to the gradient descent algorithm.
+If the problem is a linear regression problem as I suspect, I can apply leverage score sampling to design provably accurate algorithms for computing the HN value.
 
-Simple and accurate treatment effect estimation is key to the decision making of charitable and nonprofit organizations. My treatment effect estimation work with Reach Out and Read Colorado (RORCO) focused on the natural experiment setting where treatments have already been applied. In this setting, I developed a benchmark for evaluating treatment effect estimators and proposed a theoretically-motivated, simple method. However, there are few viable algorithms with non-asymptotic, user-friendly guarantees. I plan to develop simple algorithms with understandable theoretical guarantees for treatment effect estimation. I aim to leverage my prior work with RORCO and my theoretical expertise to design algorithms that are simple yet reliable, allowing stakeholders to easily evaluate the impact of their programs.
+There is a rich game theory literature to describe attribution techniques from an axiomatic perspective.
+As trustworthy AI becomes increasingly important, this literature is a powerful resource for explaining AI predictions in an axiomatic way.
+The majority of prior work that adapts game-theoretic quantities to AI applications develops heuristic algorithms.
+However, as evidenced by my work on Shapley and Banzhaf values, theoretically motivated algorithms can outperform heuristic methods, while simultaneously offering strong non-asymptotic guarantees.
+I plan to apply my theoretical toolkit to design provably efficient algorithms for computing game-theoretic quantities relevant to social good applications. 
 
 {\large \textbf{Distortion-free Watermarking for Responsible AI}}
 
-Large Language Models (LLMs) have become ubiquitous for text generation and even high-quality images can now be generated from AI models. Responsibly using these tools requires differentiating between human and AI generated content, e.g., to prevent plagiarism or detect malicious actors. Standard techniques for “watermarking” content modify the outputs, to make certain words more likely in generated text or add information in the Fourier domain of generated images. But modifications to the output can be detected and eventually forged, potentially allowing malicious actors to fake watermarks. I am interested in distortion-free approaches where the content is generated from the true distribution, and it is only possible to verify the watermark with access to a private correlated variable \cite{arabi2024hidden}. The downside of current distortion-free methods is that the correlated random variable must be stored. I plan to leverage information already present in the image or text to robustly and securely store the correlated variable, enabling efficient distortion-free watermarking and ultimately supporting the responsible use of AI.
+As AI models become more advanced, powerful tools like Large Language Models (LLMs) for text generation and diffusion models for prompt-guided image generation are ubiquitous. While these technologies have numerous applications, they also bring new risks, such as malicious actors claiming AI-generated text as their own or fabricating realistic images of fake events, causing confusion or even harm. To mitigate these risks, model owners use watermarking techniques to track the content generated by their models.
+However, most current watermarking methods are distortion-based, meaning they modify the output to embed identifiable markers. For text, the distribution of words is often altered while, for images, the distribution of an associated latent image is often modified. Despite their widespread use, distortion-based watermarks remain vulnerable: they can be detected and even forged by malicious actors if enough examples are available.
+
+I plan to develop distortion-free watermarks that scale without the need for additional storage.
+The key idea is to leverage context to robustly and securely generate a seed using locality-sensitive hashing (LSH).
+This would allow us to generate a correlated random variable from the seed in a secure and efficient manner, without distorting the distribution of the generated content.
+
+In the LLM setting, text is generated in an auto-regressive way by predicting the next token based on the previous context. Current watermarking approaches modify the next-token distribution, either globally or contextually, making the watermarks detectable, removable, and sometimes even noticeably degrading text quality. I plan to use SimHash to convert the embedding of the prompt into seeds and then generate a random variable using cryptographic hash functions. This random variable is reproducible if we have access to the seed, and distributed identically to a sample from the true probability distribution over next tokens. To detect the watermark, we compute the correlated random variable for each seed and check its alignment with the generated text. By using SimHash, we can guarantee that nearby embedded contexts produce the same seed with high probability, making the watermark detectable without degrading text quality. A similar approach can be applied to image watermarking. Instead of sampling the next token, we sample random noise to build the image via diffusion.
+
+Combining distortion-free and searchable watermarking with streaming and randomized algorithms promises security and efficiency. I plan to leverage information already present in the image or text to robustly store the correlated variable in the generated content, enabling efficient distortion-free watermarking and ultimately supporting the responsible use of AI
 
 {\large \textbf{Conclusion}}
 
 Algorithms are all around us, making our lives better but sometimes introducing biases and harm. My work seeks to improve transparency, explaining the way these models work , designing simple yet effective algorithms that can be trusted by stakeholders, and adding guard rails against the misuse of AI. I leverage both mathematical tools and algorithmic insights to solve impactful problems, iteratively identifying and solving problems with stakeholder input. I am particularly excited to further incorporate students in my research, carving out impactful problems that strengthen the skills of student researchers and encourage learning.
 
-
 \begin{center}{\large \textbf{References}}\end{center}
 
-\textit{An asterisk (*) indicates that authors are listed in alphabetical order.}
+\textit{In the tradition of theoretical computer science, an asterisk (*) indicates that authors are listed in alphabetical order.}
 }
 \bibliographystyle{alpha}
 \renewcommand
